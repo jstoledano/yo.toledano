@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+
+    {% include "partials/_http-equiv.html" %}
+    {% include "partials/_css.html" %}
+    {% include "partials/_prefetch.html" %}
+    {% include "partials/_seo.html" %}
+    {% include "partials/_opengraph.html" %}
+    {% include "partials/_feed_rss.html" %}
+    {% include "partials/_analytics.html" %}
+
+    {% block metagoogle   %}{% endblock metagoogle   %}
+    {% block metafacebook %}{% endblock metafacebook %}
+    {% block metatwitter  %}{% endblock metatwitter  %}
+    {% block metaheader   %}{% endblock metaheader   %}
+    {% block metadcterms  %}{% endblock metadcterms  %}
+    {% block html_head %}{% endblock html_head %}
+  </head>
+  <body class="{% block template_type %}home-template{% endblock %} nav-closed" itemscope itemtype="http://schema.org/WebPage">
+    {% include "partials/_metaweb.html" %}
+    {% include 'partials/_navigation.html' %}
+    <div class="site-wrapper">
+
+      <header class="main-header post-head" style="background-image: url('{% block header_image %}{{ COVER_IMG }}{% endblock %}');" itemscope itemtype="http://schema.org/WPHeader">
+        <nav class="main-nav overlay clearfix">
+          {% if SITELOGO %}
+            <a href="{{ SITEURL }}/index.html" class="blog-logo">
+              <img src="{{ SITELOGO }}" alt="{{ SITENAME }}">
+            </a>
+          {% endif %}
+          <a class="menu-button" href="#">
+            <span class="burger"><i class="fa fa-bars"></i></span>
+            <span class="word">Menú</span>
+          </a>
+        </nav>
+        <div class="vertical">
+          <div class="main-header-content inner">
+            {% block header_title %}
+              <h1 class="page-title" itemprop="headline">{{ SITENAME }}</h1>
+              <h2 class="page-description" itemprop="description">{{TAGLINE}}</h2>
+            {% endblock header_title %}
+          </div>
+        </div>
+        {% block scroll %}
+          <a class="scroll-down" href="#content">
+            <span class="hidden">Scroll Down</span>
+            <i class="fa fa-chevron-left"></i>
+          </a>
+        {% endblock scroll %}
+      </header>
+
+      {% block content %}{% endblock content %}
+
+      {% include "partials/_blog_footer.html" %}
+    </div>
+    {% include "partials/_blog_js.html" %}
+    {% block js %}{% endblock %}
+  </body>
+</html>

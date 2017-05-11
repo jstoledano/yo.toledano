@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block header_type %}post-head{% endblock %}
+{% block scroll %}{% endblock %}
+
+{% block page_title%}Archivo - {{ super() }}{% endblock %}
+
+{% block header_title %}
+  <h1 class="page-title" itemprop="headline">Archivo</h1>
+  <h2 class="page-description" itemprop="description">El histórico de los contenidos del sitio</h2>
+{% endblock header_title %}
+
+{% block content %}
+<main id="content" class="content" role="main">
+  <article class="post" itemscope="" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+
+    <div style="clear: both;">
+      <div style="">
+        <h2>Lista de Temas</h2>
+        <ul>
+          {% for cat, desc in CATS.items() %}
+            <li><a href="{{ SITEURL }}/{{ cat }}/"><strong>{{ desc[0] }}</strong></a> - <em>{{ desc[1] }}</em></li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div id="tagcloud">
+        <h2>Nube de etiquetas</h2>
+        <ul class="tagcloud">
+          {% for tag in tag_cloud %}
+          <li class="tag-{{ tag.1 }}">
+            <a href="{{ SITEURL }}/{{ tag.0.url }}">{{ tag.0 }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div><!-- ./tagcloud -->
+
+      <div style="">
+        <h2>Lista de Artículos</h2>
+        <ul>
+          {% for article in articles %}
+            <li><a title="{{ article.title|striptags }}" href="{{ SITEURL }}/{{ article.url }}">{{ article.title|striptags }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+    <div style="clear: both;"></div>
+  </article>
+
+</main>
+{% endblock content %}

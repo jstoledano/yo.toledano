@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block header_type %}tag-head{% endblock %}
+{% block scroll %}{% endblock %}
+{% block template_type %}tag-template{% endblock %}
+{% block header_title %}
+  <h1 class="page-title" itemprop="headline">{{ tag }}</h1>
+{% endblock %}
+
+{% block content %}
+<main id="content" class="content" role="main" itemprop="mainContentOfPage" itemscope="" itemtype="http://schema.org/Blog">
+  <div class="extra-pagination inner">
+    {% include 'pagination.html' %}
+  </div>
+  {% include "partials/_loop.html" %}
+  {% include 'partials/_pagination.html' %}
+</main>
+{% endblock content %}

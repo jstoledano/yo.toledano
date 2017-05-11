@@ -1,0 +1,183 @@
+{% extends "base.html" %}
+
+{% block header_image %}{% if article.cover %}{{ article.cover }}{% else %}{{ DEFAULT_HEADER_IMAGE }}{% endif %}{% endblock %}
+{% block scroll %}{% endblock %}
+{% block template_type %}post-template{% endblock %}
+
+{% block title %}{{ article.title|striptags }} - {{ super() }}{% endblock title %}
+
+{% if USE_OPEN_GRAPH %}
+  {% block metatwitter %}
+    <!-- BEGIN metatwitter -->
+    <meta property="og:locale" content="es_MX">
+    <meta property="og:locale:alternate" content="es">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@{{ TWITTER_USERNAME }}">
+    <meta name="twitter:domain" content="{{ DOMAIN }}">
+    <meta name="twitter:creator" content="@{{ TWITTER_USERNAME }}">
+    <meta name="twitter:url" content="{{ SITEURL }}/{{ article.url }}">
+    <meta name="twitter:title" content="{{ article.title|striptags }}">
+    <meta name="twitter:description" content="{% if article.summary %}{{ article.summary|striptags }}{% else %}{{ article.content|striptags|truncate(100, False) }}{% endif %}">
+    <meta name="twitter:image" content="{% if article.cover %}{{ article.cover }}{% else %}{{ ARTICLE_COVER }}{% endif %}">
+    <!-- END metatwitter -->
+  {% endblock metatwitter %}
+
+  {% block metafacebook %}
+    <!-- BEGIN metafacebook -->
+    <meta property="og:site_name" content="{{ SITENAME }} - {{ TAGLINE }}">
+    <meta property="og:locale" content="es_LA">
+    <meta property="fb:app_id" content="{{ OPEN_GRAPH_FB_APP_ID }}">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="{{ article.title|striptags }}">
+    <meta property="og:image" content="{% if article.cover %}{{ article.cover }}{% else %}{{ ARTICLE_COVER }}{% endif %}">
+    <meta property="og:image:type" content="image/jpeg">
+      <meta property="og:image:width" content="1200">
+      <meta property="og:image:height" content="675">
+    <meta property="og:description" content="{% if article.summary %}{{ article.summary|striptags }}{% else %}{{ article.content|striptags|truncate(260, False) }}{% endif %}">
+    <meta property="og:url" content="{{ SITEURL }}/{{ article.url }}">
+    <!-- END metafacebook -->
+  {% endblock metafacebook %}
+
+  {%block metagoogle%}
+    <!-- BEGIN metagoogle -->
+    <link rel="canonical" href="{{ SITEURL }}/{{ article.url }}">
+    <!-- END metagoogle -->
+  {%endblock metagoogle%}
+  {% block metadcterms %}
+    <meta name="dcterms.title" content="{{ article.title|striptags }}">
+    <meta name="dcterms.description" content="{% if article.summary %}{{ article.summary|striptags }}{% else %}{{ article.content|striptags|truncate(260, False) }}{% endif %}">
+    <meta name="dcterms.language" content="es">
+    <meta name="dcterms.type" content="post">
+    <meta name="dcterms.source" content="{{ SITEURL }}/{{ article.url }}">
+    <meta name="dcterms.publisher" content="{{ TWITTER_USERNAME }}">
+  {% endblock metadcterms %}
+{% endif %}
+
+{% block html_head %}
+<link rel="stylesheet" href="https://media.toledano.org/assets/css/grid12_1.1.css">
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "publisher": "Yo, Toledano",
+    "author": {
+      "@type": "Person",
+      "name": "{{ AUTHOR }}",
+      "image": "{{ PROFILE_IMAGE_URL }}",
+      "url": "{{ SITEURL }}",
+      "description": "{{ article.about_author|striptags }}"
+    },
+    "headline": "{{ article.title|striptags  }}",
+    "url": "{{ SITEURL }}/{{ article.url }}",
+    "datePublished": "{{ article.date|strftime('%Y-%m-%dT%H:%M:%S.%f%z') }}",
+    "dateModified": "{{ article.date|strftime('%Y-%m-%dT%H:%M:%S.%f%z') }}",
+    {% if article.cover %}
+    "image": "{{ article.cover }}",
+    {% else %}
+    "image": "{{ ARTICLE_COVER }}",
+    {% endif %}
+    "keywords": "{{ article.category.slug }}{% for tag in article.tags %} tag-{{ tag.slug }}{% endfor %}",
+    "description": "{% if article.summary %}{{ article.summary|striptags }}{% else %}{{ article.content|truncate(260, False)|striptags }}{% endif %}"
+  }
+</script>
+<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+{% if article.favorito %}
+<style media="screen">
+  .post-head.main-header {
+    height: 100vh !important;
+  }
+</style>
+{% endif %}
+{% endblock html_head %}
+
+{% block header_title %}
+  <h1 class="page-title" itemprop="headline">{{ article.title }}</h1>
+  <h2 
+    class="page-description" 
+    itemprop="description" 
+    style="text-shadow: 1px 1px #000;">
+    Archivada en 
+    <a style="color=#fff; text-decoration: none; text-shadow: 1px 1px #fff;" 
+      href="{{ SITEURL }}/{{ article.category.url }}">
+      <strong>{{ CATS[article.category][0] }}</strong>
+    </a>
+  </h2>
+{% endblock header_title %}
+
+{% block content %}
+<main id="content" class="content" role="main">
+  <article class="post" itemscope="" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+    <header class="post-header">
+      <h1 class="post-title" itemprop="headline">{{ article.title|striptags }}</h1>
+      <section class="post-meta">
+        <time class="post-date" itemprop="datePublished" datetime="{{ article.date|strftime('%YYYY-%MM-%DD') }}">{{ article.date|strftime('%A, %B %d de %Y') }}</time>
+        etiquetado como {% for tag in article.tags %}<a href="{{ SITEURL }}/{{ tag.url }}">{{ tag.name | lower }}{% if not loop.last %}, {% endif %}</a>{% endfor %}
+      </section>
+    </header>
+    <section class="post-content">
+
+      {% if article.series %}
+        <div class="series">
+          <div class="admonition notice">
+            <p class="admonition-title">Serie <strong>&ldquo;{{ article.series.name }}&rdquo;</strong></p>
+            <p>Este es el artículo <strong>número {{ article.series.index }}</strong> de la serie  <em>&ldquo;{{ article.series.name }}&rdquo;</em>:</p>
+            <ol class="parts">
+              {% for part_article in article.series.all %}
+                <li {% if part_article == article %}class="active"{% endif %}>
+                  <a href='{{ SITEURL }}/{{ part_article.url }}'>{{ part_article.title }}</a>
+                </li>
+              {% endfor %}
+            </ol>
+          </div>
+        </div>
+      {% endif %}
+
+      {{ article.content }}
+    </section>
+    <footer class="post-footer">
+      <figure class="author-image">
+        <a class="img" href="{{ article.author.url }}" style="background-image: url('{% if article.author_pic_url %}{{ article.author_pic_url }}{% else %}{{ AUTHOR_PIC_URL }}{% endif %}')"><span class="hidden">{{ article.author }}'s Picture</span></a>
+      </figure>
+      <section class="author">
+        <h4>
+          {{ article.author.name }}
+        </h4>
+        <p>{% if article.author_bio %}{{ article.author_bio }}{% else %}{{ AUTHOR_BIO }}{% endif %} 
+        <br> Redes Sociales: {% for icon, link in SOCIAL %}<a href="{{link}}"><i class="fa fa-{{icon}}"></i></a> {% endfor %}
+        </p>
+        <div class="author-meta">
+          <i class="fa fa-map-marker"></i>
+          {{ AUTHOR_LOCATION }}
+          
+        </div>
+      </section>
+      <section class="share">
+        <h4>Comparte este artículo</h4>
+        <a class="twitter" href="https://twitter.com/share?text={{ article.title | urlencode | replace(' ', '%20') | truncate(60) }}{{ ' via @' | urlencode }}{{ TWITTER_USERNAME }}&amp;url={{ SITEURL }}/{{ article.url }}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+          <span class="fa-stack">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-twitter fa-stack-1x fa-inverse" style="color: #55acee;"></i>
+          </span>
+        </a>
+        <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ SITEURL }}/{{ article.url }}" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+          <span class="fa-stack">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-facebook fa-stack-1x fa-inverse" style="color: #3b5998;"></i>
+          </span>
+        </a>
+        <a class="google-plus" href="https://plus.google.com/share?url={{ SITEURL }}/{{ article.url }}" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+          <span class="fa-stack">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-google-plus fa-stack-1x fa-inverse" style="color: #dd4b39;"></i>
+          </span>
+        </a>
+      </section>
+      {% include 'partials/_search.html' %}
+      {% if DISQUS_SITENAME %}
+        {% include 'partials/_coments.html' %}
+      {% endif %}
+    </footer>
+  </article>
+</main>
+{% include 'partials/_neighbors.html' %}
+{% endblock %}

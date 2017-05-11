@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block header_image %}
+  {% if ARCHIVE_HEADER_IMAGE %}
+    {{- ARCHIVE_HEADER_IMAGE -}}
+  {% else %}
+    {{- COVER_IMG -}}
+  {% endif %}
+{% endblock %}
+
+{% block header_type %}post-head{% endblock %}
+{% block scroll %}{% endblock %}
+
+{% block page_title%}Resultados de la búsqueda{% endblock %}
+
+{% block header_title %}
+  <h1 class="page-title" itemprop="headline">Búsqueda</h1>
+  <h2 class="page-description" itemprop="description">Mostrando los resultados de la búsqueda</h2>
+{% endblock header_title %}
+
+{% block html_head %}
+
+{% endblock html_head %}
+
+{% block content %}
+<main id="content" class="content" role="main">
+  <article class="post" itemscope="" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+    {% include 'partials/_search.html' %}
+    <script>
+      (function() {
+        var cx = '007387241458910042101:yttmqvxmhxg';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+            '//cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
+    <gcse:searchresults-only></gcse:searchresults-only>
+    {% include 'partials/_search.html' %}
+  </article>
+</main>
+{% endblock content %}
+

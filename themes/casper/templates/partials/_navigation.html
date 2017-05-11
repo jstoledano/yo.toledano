@@ -1,0 +1,42 @@
+<nav class="nav">
+  <h3 class="nav-title">Menú</h3>
+  <a href="#" class="nav-close">
+    <span class="hidden">Cerrar</span>
+  </a>
+  <ul role="menubar">
+    {% if index %}{% set output_file = 'index.html' %}{% endif %}
+    {% if archives %}{% set output_file = 'archives.html' %}{% endif %}
+    {% if page %}{% set output_file = page.url %}{% endif %}
+    <li class="{% if output_file == 'index.html' %}nav-current{% endif %}" role="presentation">
+      <a  href="{{ SITEURL }}/index.html" title="{{ SITENAME }}" itemprop="name" itemprop="significantLink">Inicio</a>
+    </li>
+    {% for p in PAGES %}
+      <li class="{% if output_file == p.url %}nav-current{% endif %}" role="presentation">
+        <a  href="{{ SITEURL }}/{{ p.url }}" title="{{ SITENAME }} |{{ p.title }}" itemprop="name" itemprop="significantLink">
+          {{ p.title }}
+        </a>
+      </li>
+    {% endfor %}
+
+    {% for cat, desc in CATS.items() %}
+      <li class="{% if category == cat %}nav-current{% endif %}"  role="presentation">
+        <a href="{{ SITEURL }}/{{ cat }}/" title="{{ desc[0] }}" itemprop="name" itemprop="significantLink">
+          {{ desc[0] }}
+        </a>
+      </li>
+    {% endfor %}
+
+    <li class="{% if output_file == 'tag/index.html' %}nav-current{% endif %}" role="presentation">
+      <a  href="{{ SITEURL }}/tag/index.html" title="Etiquetas de {{ SITENAME }}" itemprop="name" itemprop="significantLink">
+        Etiquetas
+      </a>
+    </li>
+    <li class="{% if output_file == 'archives.html' %}nav-current{% endif %}" role="presentation">
+      <a  href="{{ SITEURL }}/archives.html" title="Archivos de {{ SITENAME }}" itemprop="name" itemprop="significantLink">
+        Archivo
+      </a>
+    </li>
+  </ul>
+  {% if FEED_RSS %}<a class="subscribe-button icon-feed" href='/{{ FEED_RSS }}'  target='blank'>Suscríbete</a>{% endif %}
+</nav>
+<span class="nav-cover"></span>

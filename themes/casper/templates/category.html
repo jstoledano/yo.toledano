@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block header_type %}tag-head{% endblock %}
+{% block scroll %}{% endblock %}
+{% block template_type %}tag-template{% endblock %}
+
+{% block title %}{{ CATS[category][0]|striptags }} - {{ super() }}{% endblock title %}
+
+{% block html_head %}
+<style type="text/css">
+  .page-title {
+    text-shadow: 1px 1px #000;
+  }
+</style>
+{% endblock html_head %}
+
+{% block header_title %}
+  <h1 class="page-title" itemprop="headline">{{ CATS[category][0] }}</h1>
+  <h2 class="page-description" itemprop="description" style="text-shadow: 1px 1px #000;"><strong>{{ CATS[category][1] }}</strong></h2>
+{% endblock %}
+
+{% block content %}
+<main id="content" class="content" role="main" itemprop="mainContentOfPage" itemscope="" itemtype="http://schema.org/Blog">
+  <div class="extra-pagination inner">
+    {% include 'partials/_pagination.html' %}
+  </div>
+  {% include "partials/_loop.html" %}
+  {% include 'partials/_pagination.html' %}
+</main>
+{% endblock content %}
