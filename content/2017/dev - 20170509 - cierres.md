@@ -1,7 +1,7 @@
 Title: Funciones de primer orden II    
 Date: 2017-05-09 19:29:25
 Category: desarrollo
-Tags: javascript, closures, patterns 
+Tags: javascript, patterns 
 Summary: 
 
 
@@ -60,3 +60,6 @@ Vamos a ver como funciona nuestra función `algunos`.
     false
 
 Todavía nos falta un ejemplo más complejo que involucra el concepto de __abstracción__, pero seguiremos en el siguiente artículo.
+
+### La función `ordenar`
+
