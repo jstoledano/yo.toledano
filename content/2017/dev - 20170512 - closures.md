@@ -41,6 +41,21 @@ Ahora vamos a modificar un poco el código anterior...
 ```javascript
 let global = "global"
 function externa(){
+  function interna(){
+    let a = 5
+    console.log(global)
+  }
+  interna()    // llamamos a la función interna
+}
+```
+
+Ahora, cuando se ejecute la función `interna()` se imprimerá el valor de `global` (que también es `global`). Esto es porque las _closures_ pueden acceder a las variables globales (punto 2).
+
+El punto 3, es muy interesante y lo vamos a ejemplificar con el siguiente fragmento.
+
+```javascript
+let global = "global"
+function externa(){
   let externa = "externa"
   function interna(){
     let a = 5
@@ -50,5 +65,8 @@ function externa(){
 }
 ```
 
-Ahora, cuando se ejecute la función `interna()` se imprimerá el valor de `global` (que también es `global`). Esto es porque las _closures_ pueden acceder a las variables globales (punto 2).
+ahora la variable que se imprime es `externa`, como corresponde. Puede parecer muy simple, pero esta es una de las características más importantes de las `closures`.
+
+!!! notice "Nota"
+    Las _closures_ tienen acceso a las variables que se pasan como parámetros a la función externa. En el ejemplo desde la función `interna` se tiene acceso a las variables que recibe `externa` como parámetros.
 
