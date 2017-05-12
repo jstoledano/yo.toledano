@@ -11,6 +11,44 @@ Para explicarlo de forma simple, una _closure_ es una función interna, es decir
     :::js
     function externa() {
       function interna() {
-
       }  
     }
+
+La función `interna()` es una **closure**. Y la razón por la que las *closures* son tan importantes es porque tiene acceso al alcance **en cadena** (o al alcance en niveles). Me explico:
+
+Técnicamente, una _closure_ tiene tres alcances:
+
+1. El alcance de las variables declaradas __dentro__ de la definición de la función
+1. El alcance de las variables **globales**
+3. El alcance de las variables en __la función externa__
+
+Vamos a revisar estos tres aspectos de forma independiente usando un ejemplo. Para empezar, tenemos el siguiente ejemplo:
+
+```javascript
+function externa(){
+  function interna(){
+    let a = 5
+    console.log(a)
+  }
+  interna()    // llamamos a la función interna
+}
+```
+
+que imprime en la consola el valor de `a` cuando se llama a `interna()`. Esto se debe al punto uno: una función _closure_ puede acceder a las variables declaradas en su propia definición.
+
+Ahora vamos a modificar un poco el código anterior...
+
+```javascript
+let global = "global"
+function externa(){
+  let externa = "externa"
+  function interna(){
+    let a = 5
+    console.log(externa)
+  }
+  interna()    // llamamos a la función interna
+}
+```
+
+Ahora, cuando se ejecute la función `interna()` se imprimerá el valor de `global` (que también es `global`). Esto es porque las _closures_ pueden acceder a las variables globales (punto 2).
+
