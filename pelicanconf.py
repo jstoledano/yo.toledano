@@ -73,11 +73,11 @@ PLUGINS = ['tag_cloud', 'neighbors', 'series']
 MARKDOWN = {
     'extension_configs': {
         'markdown.extensions.codehilite': {}, #{'css_class': 'highlight'},
-        'markdown.extensions.headerid': {},
         'markdown.extensions.extra': {},
         'markdown.extensions.admonition': {},
         'markdown.extensions.meta': {},
         'markdown.extensions.smarty': {},
+        'markdown.extensions.toc': {},
         'markdown.extensions.sane_lists': {}
     }
 }
@@ -89,12 +89,12 @@ TAG_CLOUD_STEPS = 5
 THEME = 'themes/casper'
 
 CATS = {
-  'audioteca': ['Audioteca Toledana', 'La mejor selección de la música mundial'],
-  'fototeca': ['Fototeca Toledana', 'Conoce el mundo, visto desde un enfoque único'],
-  'desarrollo': ['Desarrollo Web', 'Notas sobre desarrollo con Python, Django, JavaScript y mucho más'],
-  'calidad': ['Calidad', 'Artículos sobre la implementación de la Norma ISO 9001'],
-  'opinion': ['Opinión', 'Artículos de opinión personal'],
-  'trinos': ['Céfiros y Trinos', 'Notas rápidas que encuentro navegando en Internet']
+  'audioteca': ['Audioteca Toledana', 'La mejor selección de la música mundial', 'music'],
+  'fototeca': ['Fototeca Toledana', 'Conoce el mundo, visto desde un enfoque único', 'camera-retro'],
+  'desarrollo': ['Desarrollo Web', 'Notas sobre desarrollo con Python, Django, JavaScript y mucho más', 'code'],
+  'calidad': ['Calidad', 'Artículos sobre la implementación de la Norma ISO 9001', 'certificate'],
+  'opinion': ['Opinión', 'Artículos de opinión personal', 'coffee'],
+  'trinos': ['Céfiros y Trinos', 'Notas rápidas que encuentro navegando en Internet', 'retweet']
 }
 
 TYPOGRIFY = True

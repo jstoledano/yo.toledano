@@ -54,40 +54,40 @@
 {% endif %}
 
 {% block html_head %}
-<link rel="stylesheet" href="https://media.toledano.org/assets/css/grid12_1.1.css">
-<script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "Article",
-    "publisher": "Yo, Toledano",
-    "author": {
-      "@type": "Person",
-      "name": "{{ AUTHOR }}",
-      "image": "{{ PROFILE_IMAGE_URL }}",
-      "url": "{{ SITEURL }}",
-      "description": "{{ article.about_author|striptags }}"
-    },
-    "headline": "{{ article.title|striptags  }}",
-    "url": "{{ SITEURL }}/{{ article.url }}",
-    "datePublished": "{{ article.date|strftime('%Y-%m-%dT%H:%M:%S.%f%z') }}",
-    "dateModified": "{{ article.date|strftime('%Y-%m-%dT%H:%M:%S.%f%z') }}",
-    {% if article.cover %}
-    "image": "{{ article.cover }}",
-    {% else %}
-    "image": "{{ ARTICLE_COVER }}",
-    {% endif %}
-    "keywords": "{{ article.category.slug }}{% for tag in article.tags %} tag-{{ tag.slug }}{% endfor %}",
-    "description": "{% if article.summary %}{{ article.summary|striptags }}{% else %}{{ article.content|truncate(260, False)|striptags }}{% endif %}"
-  }
-</script>
-<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
-{% if article.favorito %}
-<style media="screen">
-  .post-head.main-header {
-    height: 100vh !important;
-  }
-</style>
-{% endif %}
+  <link rel="stylesheet" href="https://media.toledano.org/assets/css/grid12_1.1.css">
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Article",
+      "publisher": "Yo, Toledano",
+      "author": {
+        "@type": "Person",
+        "name": "{{ AUTHOR }}",
+        "image": "{{ PROFILE_IMAGE_URL }}",
+        "url": "{{ SITEURL }}",
+        "description": "{{ article.about_author|striptags }}"
+      },
+      "headline": "{{ article.title|striptags  }}",
+      "url": "{{ SITEURL }}/{{ article.url }}",
+      "datePublished": "{{ article.date|strftime('%Y-%m-%dT%H:%M:%S.%f%z') }}",
+      "dateModified": "{{ article.date|strftime('%Y-%m-%dT%H:%M:%S.%f%z') }}",
+      {% if article.cover %}
+      "image": "{{ article.cover }}",
+      {% else %}
+      "image": "{{ ARTICLE_COVER }}",
+      {% endif %}
+      "keywords": "{{ article.category.slug }}{% for tag in article.tags %} tag-{{ tag.slug }}{% endfor %}",
+      "description": "{% if article.summary %}{{ article.summary|striptags }}{% else %}{{ article.content|truncate(260, False)|striptags }}{% endif %}"
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+  {% if article.favorito %}
+  <style media="screen">
+    .post-head.main-header {
+      height: 100vh !important;
+    }
+  </style>
+  {% endif %}
 {% endblock html_head %}
 
 {% block header_title %}
@@ -148,7 +148,6 @@
         <div class="author-meta">
           <i class="fa fa-map-marker"></i>
           {{ AUTHOR_LOCATION }}
-          
         </div>
       </section>
       <section class="share">

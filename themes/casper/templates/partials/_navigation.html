@@ -8,7 +8,9 @@
     {% if archives %}{% set output_file = 'archives.html' %}{% endif %}
     {% if page %}{% set output_file = page.url %}{% endif %}
     <li class="{% if output_file == 'index.html' %}nav-current{% endif %}" role="presentation">
-      <a  href="{{ SITEURL }}/index.html" title="{{ SITENAME }}" itemprop="name" itemprop="significantLink">Inicio</a>
+      <a  href="{{ SITEURL }}/index.html" title="{{ SITENAME }}" itemprop="name" itemprop="significantLink">
+        <i class="fa fa-home"></i> Inicio
+      </a>
     </li>
     {% for p in PAGES %}
       <li class="{% if output_file == p.url %}nav-current{% endif %}" role="presentation">
@@ -21,19 +23,19 @@
     {% for cat, desc in CATS.items() %}
       <li class="{% if category == cat %}nav-current{% endif %}"  role="presentation">
         <a href="{{ SITEURL }}/{{ cat }}/" title="{{ desc[0] }}" itemprop="name" itemprop="significantLink">
-          {{ desc[0] }}
+          <i class="fa fa-{{ desc[2] }}"></i> {{ desc[0] }}
         </a>
       </li>
     {% endfor %}
 
     <li class="{% if output_file == 'tag/index.html' %}nav-current{% endif %}" role="presentation">
       <a  href="{{ SITEURL }}/tag/index.html" title="Etiquetas de {{ SITENAME }}" itemprop="name" itemprop="significantLink">
-        Etiquetas
+        <i class="fa fa-tags"></i> Etiquetas
       </a>
     </li>
     <li class="{% if output_file == 'archives.html' %}nav-current{% endif %}" role="presentation">
       <a  href="{{ SITEURL }}/archives.html" title="Archivos de {{ SITENAME }}" itemprop="name" itemprop="significantLink">
-        Archivo
+        <i class="fa fa-map"></i> Archivo
       </a>
     </li>
   </ul>
