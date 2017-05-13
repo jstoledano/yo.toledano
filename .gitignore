@@ -5,6 +5,7 @@ node_modules/
 plugins/
 *.pid
 .idea/
+cache/
 
 
 # Byte-compiled / optimized / DLL files

@@ -69,7 +69,7 @@ LOCALE = 'es_ES.UTF-8'
 DEFAULT_DATE_FORMAT = '%A, %d de %B de %Y'
 
 PLUGIN_PATHS = ['../pelican-plugins', ]
-PLUGINS = ['tag_cloud', 'neighbors', 'series']
+PLUGINS = ['tag_cloud', 'neighbors', 'series', 'sitemap']
 MARKDOWN = {
     'extension_configs': {
         'markdown.extensions.codehilite': {}, #{'css_class': 'highlight'},
@@ -113,6 +113,8 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 DEFAULT_PAGINATION = 5
+
+CACHE_CONTENT = True
 LOAD_CONTENT_CACHE = True
 
 # Uncomment following line if you want document-relative URLs when developing
@@ -121,4 +123,20 @@ RELATIVE_URLS = True
 STATIC_PATHS = ['images', 'extra/robots.txt', 'extra/favicon.ico']
 EXTRA_PATH_METADATA = {
     'extra/robots.txt': {'path': 'robots.txt'},
+    'extra/favicon.ico': {'path': 'favicon.ico'}
+}
+
+SITEMAP = {
+    'exclude': ['tag/', 'category/'],
+    'format': 'xml',
+    'priorities': {
+        'articles': 0.5,
+        'indexes': 0.5,
+        'pages': 0.5
+    },
+    'changefreqs': {
+        'articles': 'monthly',
+        'indexes': 'daily',
+        'pages': 'monthly'
+    }
 }
