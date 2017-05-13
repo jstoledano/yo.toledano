@@ -6,7 +6,7 @@
 {% block page_title%}Archivo - {{ super() }}{% endblock %}
 
 {% block header_title %}
-  <h1 class="page-title" itemprop="headline">Archivo</h1>
+  <h1 class="page-title" itemprop="headline"><i class="fa fa-sitemap"></i> Archivo</h1>
   <h2 class="page-description" itemprop="description">El histórico de los contenidos del sitio</h2>
 {% endblock header_title %}
 
@@ -16,16 +16,16 @@
 
     <div style="clear: both;">
       <div style="">
-        <h2>Lista de Temas</h2>
+        <h2><i class="fa fa-folder-open"></i> Lista de Temas</h2>
         <ul>
           {% for cat, desc in CATS.items() %}
-            <li><a href="{{ SITEURL }}/{{ cat }}/"><strong>{{ desc[0] }}</strong></a> - <em>{{ desc[1] }}</em></li>
+            <li><i class="fa fa-{{ desc[2] }}"></i> <a href="{{ SITEURL }}/{{ cat }}/"><strong>{{ desc[0] }}</strong></a> - <em>{{ desc[1] }}</em></li>
           {% endfor %}
         </ul>
       </div>
 
       <div id="tagcloud">
-        <h2>Nube de etiquetas</h2>
+        <h2><i class="fa fa-tags"></i> Nube de etiquetas</h2>
         <ul class="tagcloud">
           {% for tag in tag_cloud %}
           <li class="tag-{{ tag.1 }}">
@@ -36,7 +36,7 @@
       </div><!-- ./tagcloud -->
 
       <div style="">
-        <h2>Lista de Artículos</h2>
+        <h2><i class="fa fa-newspaper-o"></i> Lista de Artículos</h2>
         <ul>
           {% for article in articles %}
             <li><a title="{{ article.title|striptags }}" href="{{ SITEURL }}/{{ article.url }}">{{ article.title|striptags }}</a></li>

@@ -6,7 +6,7 @@
 {% block title %}Categorías - {{ super() }}{% endblock title %}
 
 {% block header_title %}
-  <h1 class="page-title" itemprop="headline">Categorías</h1>
+  <h1 class="page-title" itemprop="headline"><i class="fa fa-folder-open }}"></i> Categorías</h1>
   <h2 class="page-description" itemprop="description">Estos son los temas</h2>
 {% endblock header_title %}
 
@@ -16,7 +16,7 @@
     <div style="clear: both;">
       <ul>
         {% for cat, desc in CATS.items() %}
-        <li><a href="{{ SITEURL }}/{{ cat }}/"><strong>{{ desc[0]}}</strong></a> - <em>{{ desc[1] }}</em></li>
+        <li><a href="{{ SITEURL }}/{{ cat }}/"><strong><i class="fa fa-{{ desc[2] }}"></i> {{ desc[0]}}</strong></a> - <em>{{ desc[1] }}</em></li>
         {% endfor %}
       </ul>
     </div>

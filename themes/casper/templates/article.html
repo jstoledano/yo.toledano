@@ -91,7 +91,7 @@
 {% endblock html_head %}
 
 {% block header_title %}
-  <h1 class="page-title" itemprop="headline">{{ article.title }}</h1>
+  <h1 class="page-title" itemprop="headline"><i class="fa fa-newspaper-o" aria-hidden="true"></i> {{ article.title }}</h1>
   <h2 
     class="page-description" 
     itemprop="description" 
@@ -99,7 +99,7 @@
     Archivada en 
     <a style="color=#fff; text-decoration: none; text-shadow: 1px 1px #fff;" 
       href="{{ SITEURL }}/{{ article.category.url }}">
-      <strong>{{ CATS[article.category][0] }}</strong>
+      <i class="fa fa-folder-open"></i> <strong>{{ CATS[article.category][0] }}</strong>
     </a>
   </h2>
 {% endblock header_title %}
@@ -110,8 +110,10 @@
     <header class="post-header">
       <h1 class="post-title" itemprop="headline">{{ article.title|striptags }}</h1>
       <section class="post-meta">
-        <time class="post-date" itemprop="datePublished" datetime="{{ article.date|strftime('%YYYY-%MM-%DD') }}">{{ article.date|strftime('%A, %B %d de %Y') }}</time>
-        etiquetado como {% for tag in article.tags %}<a href="{{ SITEURL }}/{{ tag.url }}">{{ tag.name | lower }}{% if not loop.last %}, {% endif %}</a>{% endfor %}
+        <time class="post-date" itemprop="datePublished" datetime="{{ article.date|strftime('%YYYY-%MM-%DD') }}">
+        <i class="fa fa-calendar" aria-hidden="true"></i> {{ article.date|strftime('%A, %B %d de %Y') }}</time> 
+        &mdash;
+        Etiquetado como {% for tag in article.tags %}<a href="{{ SITEURL }}/{{ tag.url }}"><i class="fa fa-tag"></i> {{ tag.name | lower }}{% if not loop.last %}, {% endif %}</a>{% endfor %}
       </section>
     </header>
     <section class="post-content">

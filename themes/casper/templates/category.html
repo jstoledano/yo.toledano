@@ -14,7 +14,7 @@
 {% endblock html_head %}
 
 {% block header_title %}
-  <h1 class="page-title" itemprop="headline">{{ CATS[category][0] }}</h1>
+  <h1 class="page-title" itemprop="headline"><i class="fa fa-{{ CATS[category][2] }}"></i> {{ CATS[category][0] }}</h1>
   <h2 class="page-description" itemprop="description" style="text-shadow: 1px 1px #000;"><strong>{{ CATS[category][1] }}</strong></h2>
 {% endblock %}
 
