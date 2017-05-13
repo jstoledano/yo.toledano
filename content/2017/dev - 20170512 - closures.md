@@ -4,7 +4,7 @@ Category: desarrollo
 Tags: javascript, patterns 
 Summary: 
 
-La verdad no encontré una buena traducción de __*closure*__. Literalmente, significa _"cierre"_, pero no tiene mucho sentido en el contexto de la programación fun&shy;cional. Es uno de esos conceptos que para comprenderlo hay que verlo o hacerlo.
+La verdad no encontré una buena traducción de __*closure*__. Literalmente, significa _"cierre"_, pero no tiene mucho sentido en el contexto de la programación funcional. Es uno de esos conceptos que para comprenderlo hay que verlo o hacerlo.
 
 Para explicarlo de forma simple, una _closure_ es una función interna, es decir, __una función *dentro* de otra función__. Algo asi:
 
@@ -68,5 +68,28 @@ function externa(){
 ahora la variable que se imprime es `externa`, como corresponde. Puede parecer muy simple, pero esta es una de las características más importantes de las `closures`.
 
 !!! notice "Nota"
-    Las _closures_ tienen acceso a las variables que se pasan como parámetros a la función externa. En el ejemplo desde la función `interna` se tiene acceso a las variables que recibe `externa` como parámetros.
+    Las _closures_ tienen acceso a las variables que se pasan como parámetros a la función externa. En el ejemplo desde la función `interna()` se tiene acceso a las variables que recibe `externa()` como parámetros.
+
+### El contexto y las closures
+Las _closures_ tienen otra característica importante: _recuerdan su contexto_. Veamos este ejemplo:
+
+```js
+let fn = (arg) => {
+  let externa = "Visible"
+  let fnInterna = () => {
+    console.log(externa)
+    console.log(arg)
+  }
+  return fnInterna
+}
+```
+
+El código es, relativamente, simple. La función `fnInterna()` es una función _closure_ de `fn()` y `fn` regresa a `fnInterna` cuando se llama. Hasta aquí, nada nuevo. Pero veamos como funciona.
+
+```
+> let closureFn = fn(5)
+> closureFn()
+Visible
+5
+```
 

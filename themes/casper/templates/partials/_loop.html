@@ -15,7 +15,7 @@
         {% endif %}
       </section>
       <footer class="post-meta">
-        Publicado en la categoría <strong><i class="fa fa-folder-open-o" aria-hidden="true"></i> <a href="{{ SITEURL }}/{{ article.category.url }}">{{ CATS[article.category][0] }}</a></strong>
+        Publicado en la categoría <strong><i class="fa fa-{{ CATS[article.category][2] }}" aria-hidden="true"></i> <a href="{{ SITEURL }}/{{ article.category.url }}">{{ CATS[article.category][0] }}</a></strong>
         <br>
         <strong><i class="fa fa-tags"></i> Etiquetas:</strong>  {% for tag in article.tags %}<i class="fa fa-tag"></i>  <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag.name | lower }}{% if not loop.last %}, {% endif %}</a>{% endfor %}
         <time class="post-date" itemprop="datePublished" datetime="{{ article.date.isoformat() }}"><i class="fa fa-calendar" aria-hidden="true"></i> {{ article.locale_date }}</time>
