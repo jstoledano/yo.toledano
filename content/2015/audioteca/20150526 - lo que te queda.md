@@ -1,7 +1,7 @@
 Title: Lo que te queda
 Date: 2015-04-26 20:42:41
 Category: audioteca
-Tags: lang:es, musica, grupera
+Tags: lang:es, grupera
 Author: Javier Sanchez Toledano
 Summary: Letra y música de «Lo que te queda» con el grupo «Los Pulpos».
 

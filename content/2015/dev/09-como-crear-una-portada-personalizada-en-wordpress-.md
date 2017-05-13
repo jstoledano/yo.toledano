@@ -1,7 +1,7 @@
 Title: Cómo crear una portada personalizada en WordPress usando Genesis Framework
 Date: 2013/11/19 15:36
 Category: Desarrollo
-Tags: functionsphp, genesiswp, wordpress
+Tags: php, genesiswp, wordpress
 Slug: como-crear-una-portada-personalizada-en-wordpress-
 Author: Javier Sanchez Toledano
 Summary:

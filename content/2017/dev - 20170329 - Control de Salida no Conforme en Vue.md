@@ -75,20 +75,19 @@ class ConjuntoViewSet(viewsets.ModelViewSet):
 
 En el lado del cliente, usando __VueJS__, traemos el contenido de este modelo con una promesa, usando __Axios__:
 
-```javascript
-  let _getConjuntos = function () {
-    this.axios.get('http://localhost:8000/rechazos/conjuntos').then((carga) => {
-      this.conjuntos = carga.data.map((conjunto) => {
-        return {
-          id: conjunto.id,
-          nombre: conjunto.nombre,
-          slug: conjunto.slug,
-          autor: conjunto.author
-        }
-      })
-    })
-  }
-```
+    :::javascript
+        let _getConjuntos = function () {
+        this.axios.get('http://localhost:8000/rechazos/conjuntos').then((carga) => {
+          this.conjuntos = carga.data.map((conjunto) => {
+            return {
+              id: conjunto.id,
+              nombre: conjunto.nombre,
+              slug: conjunto.slug,
+              autor: conjunto.author
+            }
+          })
+        })
+    }
 
 Esta función _mapea_ el contenido porque solo requerimos cuatro campos. Esta función la colocamos en los métodos:
 

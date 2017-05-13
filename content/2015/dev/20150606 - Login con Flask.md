@@ -1,7 +1,7 @@
 Title: Login con Flask
 Date: 2015-06-06 17:07:53
 Category: Desarrollo
-Tags:  flask, openid,
+Tags:  flask, openid, python
 Author: Javier Sanchez Toledano
 Summary: Cómo funciona el registro de usuarios en Flask
 

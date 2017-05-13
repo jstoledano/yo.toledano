@@ -1,7 +1,7 @@
 Title: Implementación de un sistema de avisos
 Date: 2014/03/01 13:31
 Category: Desarrollo
-Tags: cmi2014, blogging, patterns
+Tags: python, patterns
 Slug: sistema-de-avisos-01
 Author: Javier Sanchez Toledano
 email: javier@namespace.mx
@@ -141,7 +141,7 @@ Tenemos todo lo necesario para definir nuestro modelo, así que vamos a revisarl
 
 Nuestro modelo tiene siete campos, cinco están definidos en el modelo y dos campos heredados del _mixin_ `Trazabilidad`. Pero de estos siete campos, cinco son automáticos y solo dos son editables por el usuario: `titulo` y `texto_md`. Los demás campos se calculan al momento de guardar el registro, sobreescribiendo el método `save()`.
 
-!!! alert-info "Markdown: Conviértase antes de usar"
+!!! notice "Markdown: Conviértase antes de usar"
     Una forma tradicional de utilizar Markdown era mandar el texto directamente a la plantilla y usar un filtro para convertirlo. Este tenía que pasar cada vez que un usuario solicitaba la página. Evidentemente, el gasto era excesivo, por eso Django depreció los filtros a partir de la versión 1.5.
 
     La forma en la que se hace ahora resulta ser mucho más eficiente. Se almacena el texto en formato `markdown` en un campo y en otro campo el texto convertido en `html` que se actualiza automáticamente cada vez que el campo `markdown` cambia.

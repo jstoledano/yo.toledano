@@ -1,7 +1,7 @@
 Title: Annoying, un básico para tus proyectos
 Date: 2014/03/14 22:48
 Category: Desarrollo
-Tags: models, patterns
+Tags: models, patterns, django, modules
 Slug: annoying-basico-para-proyectos
 Author: Javier Sanchez Toledano
 email: javier@namespace.mx

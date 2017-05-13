@@ -1,6 +1,7 @@
 Title: Naturaleza Oscura    
 Date: 2015-10-04 3:31:07 p.m.
-Category: opinion    
+Category: opinion
+Tags: critica, steampunk, sci-fi    
 
 
 <div class="row">

@@ -1,7 +1,7 @@
 Title: Uso de las etiquetas de autoría en Genesis  
 Date: 2014/04/21 13:24  
 Category: Desarrollo  
-Tags: seo, genesiswp, hacks, wordpress
+Tags: genesiswp, wordpress
 Summary: Como aprovechar las etiquetas de autoría de Googla para mejorar la presencia de nuestro sitio en los resultados de las búsquedas.
 
 

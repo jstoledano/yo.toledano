@@ -1,7 +1,7 @@
 Title: Funciones de primer orden II    
 Date: 2017-05-09 19:29:25
 Category: desarrollo
-Tags: javascript, patterns 
+Tags: javascript, patterns, es6
 Summary: 
 
 

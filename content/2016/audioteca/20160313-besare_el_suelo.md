@@ -1,7 +1,7 @@
 Title: Besaré el suelo otra vez      
 Date: 2016-03-13 16:05:50
 Category: audioteca
-Tags: lang:es, pop, musica
+Tags: lang:es, pop,
 Summary: 
 
 La **Audioteca Toledana** inicia sus transmisiones en este año (que promete ser movido y variado) con una promesa tan inevitable como el <strong>Apocalipsis Zombie</strong>.

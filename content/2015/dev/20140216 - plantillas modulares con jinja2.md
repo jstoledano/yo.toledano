@@ -1,7 +1,7 @@
 Title: Crear plantillas modulares con Jinja2  
 Date: 2014/02/16 12:17  
 Category: Desarrollo  
-Tags: templates, jinja2, html5, python
+Tags: jinja2, html5, python
 Slug: jinja2-modular-templates  
 Author: Javier Sanchez Toledano  
 Summary: Como crear plantillas modulares con Jinja2  

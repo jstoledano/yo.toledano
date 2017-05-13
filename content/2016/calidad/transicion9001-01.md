@@ -1,7 +1,7 @@
 Title: Cambios en la 9001:2015    
 Date: 2016-11-02 15:30
 Category: calidad
-Tags: 9001:2015, transicion
+Tags: iso9001, requisitos
 Series: Transición 9001:2015
 Summary: 
 

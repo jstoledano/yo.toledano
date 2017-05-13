@@ -1,7 +1,7 @@
 Title: Cómo crear un plugin para VueJS   
 Date: 2017-03-25 13:37:46
 Category: desarrollo 
-Tags: vuejs, plugin, javascript, es6  
+Tags: vuejs, javascript, es6  
 Summary: Los plugins en VueJS son una forma simple pero efectiva de crear funciones globales y facilitar la reutilización de código entre proyecto.
 
 Crear un  _plugin_ para **VueJS** es una forma simple de aislar el código de una aplicación específica y hacerlo útil para cualquier otra de forma global. Lo importante es que no tenga en código dependiente de una aplicación en particular, sino que sea _agnóstica_.

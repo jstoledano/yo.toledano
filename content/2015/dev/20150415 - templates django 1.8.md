@@ -1,7 +1,7 @@
 Title: La nueva configuración de plantillas en Django
 Date: 2015-08-09 12:43:36 a.m.
 Category: Desarrollo 
-Tags:  django
+Tags:  django, patterns
 Author: Javier Sanchez Toledano
 Summary: 
 

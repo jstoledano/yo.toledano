@@ -1,7 +1,7 @@
 Title: El Manual de la Calidad en la norma ISO 9001  
 Date: 2015-07-25 19:46:01  
 Category: Calidad  
-Tags:  manual, documentación  
+Tags:  iso9001, requisitos
 Author: Javier Sanchez Toledano  
 Summary: Cómo cumplir con el requisito del manual de la calidad.  
 

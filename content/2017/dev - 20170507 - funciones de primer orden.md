@@ -1,7 +1,7 @@
 Title: Funciones de primer orden    
 Date: 2017-05-07 14:53:30
 Category: desarrollo
-Tags: javascript, patterns,  
+Tags: javascript, patterns, es6
 Summary: 
 Series: Programación Funcional
 

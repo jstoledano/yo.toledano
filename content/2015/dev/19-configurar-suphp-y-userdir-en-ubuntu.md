@@ -1,7 +1,7 @@
 Title: Configurar suPHP y userdir en Ubuntu
 Date: 2013/11/21 19:02
 Category: Desarrollo 
-Tags: admin, ubuntu, php, apache 
+Tags: admin, php, apache 
 Slug: configurar-suphp-y-userdir-en-ubuntu
 Author: Javier Sanchez Toledano
 Summary: 

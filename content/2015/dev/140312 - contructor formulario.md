@@ -1,7 +1,7 @@
 Title: Excluir el campo de un formulario al llamarlo
 Date: 2014/03/12 10:23
 Category: Desarrollo
-Tags: django, form, views, cmi
+Tags: django, python, forms
 Slug: excluir-campo-formulario
 Author: Javier Sanchez Toledano
 email: javier@namespace.mx
@@ -35,19 +35,6 @@ Este es el modelo para los usuarios que usan las metas:
             verbose_name_plural = 'Perfiles'
 
 Como pueden ver, usa una clave foránea que enlaza a los usuarios del sistema para controlar grupos y permisos.
-
-<div style="max-width:300px; margin: 25px auto;">
-  <!-- nspace_01 -->
-  <ins class="adsbygoogle"
-       style="display:block"
-       data-ad-client="ca-pub-9466828947698623"
-       data-ad-slot="5225523689"
-       data-ad-format="auto"></ins>
-  <script>
-    (adsbygoogle = window.adsbygoogle || []).push({});
-  </script>
-</div>
-<div style="clear:both;"></div>
 
 Entonces, cuando se trata de agregar a los usuarios uso un formulario que toma ciertos campos para el modelo `django.contrib.auth.models.Users`y estos campos en este modelo `Pipol`.
 

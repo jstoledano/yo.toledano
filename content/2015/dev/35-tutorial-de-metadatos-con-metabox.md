@@ -1,7 +1,7 @@
 Title: Tutorial de metadatos con MetaBox
 Date: 2013/12/26 20:05
 Category: Desarrollo 
-Tags: meta-box, custom-fields, genesiswp, wordpress
+Tags: php, genesiswp, wordpress
 Slug: tutorial-de-metadatos-con-metabox
 Author: Javier Sanchez Toledano
 Summary: 

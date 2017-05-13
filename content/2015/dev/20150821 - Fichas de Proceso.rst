@@ -2,7 +2,7 @@ Fichas de proceso con Python
 ============================
 
 :date: 2015-08-21 21:08:47 GMT-5
-:tags: python, procesos, iso, 9001
+:tags: python, procesos, iso9001
 :category: Desarrollo
 :slug: fichas-de-proceso-con-python
 :cover: https://media.toledano.org/images/dev/ficha-procesos.jpg

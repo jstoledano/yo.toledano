@@ -2190,40 +2190,29 @@ body.page-template .post-title {
    15. Yo, Toledano
    ========================================================================== */
 
-   ul.tagcloud {
+ul.tagcloud {
   list-style: none;
-    padding: 0;
+  padding: 0;
+}
+
+ul.tagcloud a { 
+  text-decoration: none; 
 }
 
 ul.tagcloud li {
-    display: inline-block;
+  display: inline-block;
 }
 
-li.tag-1 {
-    font-size: 150%;
-}
-
-li.tag-2 {
-    font-size: 120%;
-}
-
-li.tag-3 {
-    font-size: 100%;
-}
-
-li.tag-4 {
-    font-size: 80%;
-}
-
-li.tag-4 {
-    font-size: 60%;
-}
-
+li.tag-1 { font-size: 140%; }
+li.tag-2 { font-size: 120%; }
+li.tag-3 { font-size: 100%; }
+li.tag-4 { font-size:  80%; }
+li.tag-5 { font-size:  60%; }
 
 
 ul.tagcloud .list-group-item <span>.badge {
-    background-color: grey;
-    color: white;
+  background-color: grey;
+  color: white;
 }
 
   pre {

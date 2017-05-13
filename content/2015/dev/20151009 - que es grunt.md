@@ -1,6 +1,7 @@
 Title: Cómo usar Grunt    
 Date: 2015-10-09 8:38:14 p.m.
 Category: desarrollo
+Tags: tools, frontend
 
 Como inicio la completamente nueva versión 2.0 del Cuadro de Mando Integral, totalmente renovada y reescrita desde el origen, orientado a la norma ISO 9001:2015, aprovecho para utilizar por primera vez algunas tecnologías que nunca había usado. Como **Grunt**.
 

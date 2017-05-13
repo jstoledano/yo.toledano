@@ -1,7 +1,7 @@
 Title: Angular para Djangonautas    
 Date: 2016-10-22 21:21:31
 Category: desarrollo
-Tags: angular, django 
+Tags: frontend, angular, django 
 Series: Angular para Djangonautas
 Summary: 
 

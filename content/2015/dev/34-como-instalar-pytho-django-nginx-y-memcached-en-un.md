@@ -1,7 +1,7 @@
 Title: Como instalar Python, Django, Nginx y Memcached en un servidor Ubuntu desde cero, parte 1
 Date: 2013/12/16 04:32
 Category: Desarrollo 
-Tags: server-admin, python, django 
+Tags: admin, python, django 
 Slug: como-instalar-pytho-django-nginx-y-memcached-en-un
 Author: Javier Sanchez Toledano
 Summary: 

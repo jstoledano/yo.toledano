@@ -1,7 +1,7 @@
 Title: Dividiendo las rutas en VueJS    
 Date: 2017-04-02 00:17:06
 Category: desarrollo 
-Tags: javascript, vuejs, router 
+Tags: javascript, vuejs, es6, patterns
 Summary: 
 
 Pregunté en [Stackoverflow en Español](http://es.stackoverflow.com/questions/59572/unir-dos-routers-en-vuejs) como dividir mis rutas, tal como lo hacen en Django y aunque hay una excelente respuesta, no se relaciona con mi pregunta de forma directa. 

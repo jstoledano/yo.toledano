@@ -1,7 +1,7 @@
 Title: Cómo insertar imágenes en DocBook
 Date: 2013/11/22 16:02
 Category: Desarrollo 
-Tags: docbook, maquetacion 
+Tags: docbook, maquetacion, tools
 Slug: como-insertar-imagenes-en-docbook
 Author: Javier Sanchez Toledano
 Summary: 

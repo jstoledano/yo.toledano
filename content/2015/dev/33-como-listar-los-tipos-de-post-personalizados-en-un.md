@@ -1,7 +1,7 @@
 Title: Como listar los tipos de post personalizados en un mapa de sitio de WordPress
 Date: 2013/12/07 03:47
 Category: Desarrollo 
-Tags: loops, custom-posts, genesiswp, wp_query, nivelavanzado, wordpress 
+Tags: genesiswp, wp_query, php, wordpress 
 Slug: como-listar-los-tipos-de-post-personalizados-en-un
 Author: Javier Sanchez Toledano
 Summary: 

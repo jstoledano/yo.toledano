@@ -1,7 +1,7 @@
 Title: Uso de Managers en Modelos de Datos
 Date: 2013/11/19 19:58
 Category: Desarrollo 
-Tags: patterns, models, managers 
+Tags: patterns, python, django, models 
 Slug: uso-de-managers-en-modelos-de-datos
 Author: Javier Sanchez Toledano
 Summary: 

@@ -1,7 +1,7 @@
 Title: Cómo hacer un gestor de objetos en Django
 Date: 2015-08-09 12:42:57 a.m.
 Category: Desarrollo
-Tags:  django
+Tags:  django, models
 Author: Javier Sanchez Toledano
 Summary: 
 

@@ -1,7 +1,7 @@
 Title: Agregar migas de pan a un blog con Genesis Framework
 Date: 2013/11/21 16:45
 Category: Desarrollo 
-Tags: functionsphp, filters, seo, breadcrumb, WordPress
+Tags: php, filtros, wordpress, genesiswp
 Slug: agregar-migas-de-pan-un-blog-con-genesis-framework
 Author: Javier Sanchez Toledano
 Summary: 
@@ -36,5 +36,5 @@ function cyberia_breadcrumb_args( $args ) {
 }    
 ```
 
-!!! alert-succes "Necesitas Genesis Framework"
+!!! notice "Necesitas Genesis Framework"
     Para poder ejecutar este código, necesitas contar con [Genesis Framework](http://ito.mx/genesis). 

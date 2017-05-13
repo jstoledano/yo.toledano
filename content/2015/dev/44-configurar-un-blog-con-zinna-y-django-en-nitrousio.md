@@ -1,7 +1,7 @@
 Title: Configurar un blog con Zinna y Django en Nitrous.IO
 Date: 2014/01/12 05:02
 Category: Desarrollo
-Tags: krypton, django, zinnia
+Tags: django, zinnia
 Slug: configurar-un-blog-con-zinna-y-django-en-nitrousio
 Author: Javier Sanchez Toledano
 Summary:

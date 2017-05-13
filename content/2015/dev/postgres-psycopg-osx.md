@@ -1,7 +1,7 @@
 Title: PostgreSQL y Python en Mac OSX usando PsycoPG2  
 Date: 2015-02-23 10:57:09  
 Category: Desarrollo  
-Tags:  osx, pip, postgresql, python  
+Tags:  osx, postgresql, python  
 Author: Javier Sanchez Toledano
 Summary:  Cómo utilizar PostgreSQL y Python en Mac OSX usando PsycoPG2  
 

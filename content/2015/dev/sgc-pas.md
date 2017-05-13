@@ -1,7 +1,7 @@
 Title: Planes de Acción y Seguimiento
 Date: 2015-08-09 12:47:12 a.m.
 Category: Calidad
-Tags:  iso, 9001:2015
+Tags:  iso9001, requisitos
 Author: Javier Sanchez Toledano
 Summary: Cómo desarrollar una aplicación en Django para controlar los planes de acción y seguimiento según la norma ISO 9001:2015.
 

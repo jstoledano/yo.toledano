@@ -1,7 +1,7 @@
 Title: Cómo usar Sass en WordPress
 Date: 2014-08-24 11:33:22
 Category: Desarrollo
-Tags:  WordPress, SASS, CSS3, JetPack
+Tags:  wordpress, sass, css
 Author: Javier Sanchez Toledano
 Summary: Cómo usar SASS para facilitar la personalización de temas de WordPress usando JetPack
 

@@ -1,7 +1,7 @@
 Title: Tierra Luna
 Date: 2014/02/28 23:02
 Category: Audioteca
-Tags: lang:es, musica, poesia
+Tags: lang:es, poesia, trova
 Slug: tierra-luna
 Author: Javier Sanchez Toledano
 email: javier@namespace.mx

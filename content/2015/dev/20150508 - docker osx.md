@@ -1,7 +1,7 @@
 Title: Cómo instalar Docker en OS X
 Date: 2015-05-08 20:29:36
 Category: Desarrollo
-Tags:  docker, homebrew, osx
+Tags:  docker, admin, osx
 Author: Javier Sanchez Toledano
 Summary: Cómo instalar docker en Mac OS X fácil y rápido.
 

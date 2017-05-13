@@ -1,7 +1,7 @@
 Title: Verificación de Token en VueJS    
 Date: 2017-03-25 21:15:40
 Category: desarrollo
-Tags: vuejs, acreditacion, mixins 
+Tags: vuejs, restful, patterns 
 Summary: Una primera aproximación a un servicio para verificar que existe un token de acreditación con VueJS.
 
 Hace unos meses intenté hacer la aplicación del Cuadro de Mando Integral, el CMI, usando AngularJS. Aunque hice algunos avances, realmente nunca logré entenderlo del todo[^1].

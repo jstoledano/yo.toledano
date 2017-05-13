@@ -1,7 +1,7 @@
 Title: De la ausencia y de tí     
 Date: 2017-03-26 22:51
 Category: audioteca
-Tags: musica, lang:es  
+Tags: trova, lang:es  
 Summary: 
 
 Hace mucho que la Audioteca Toledana no publicaba nada, y aprovechando que cierra un ciclo en mi vida y, por supuesto, inicia otro, dedico este artículo (y es el último que le dedico) a mi pasado.

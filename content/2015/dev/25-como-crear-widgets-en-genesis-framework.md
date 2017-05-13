@@ -1,7 +1,7 @@
 Title: Cómo crear widgets en Genesis Framework
 Date: 2013/11/27 14:38
 Category: Desarrollo 
-Tags: functionsphp, widgets, genesiswp, wordpress
+Tags: php, genesiswp, wordpress
 Slug: como-crear-widgets-en-genesis-framework
 Author: Javier Sanchez Toledano
 Summary: 

@@ -1,6 +1,7 @@
 Title: Anatomía de un Gruntfile    
 Date: 2015-10-10 10:05:07 a.m.
 Category: desarrollo
+Tags: tools, javascript, frontend
 
 El objetivo de usar __Grunt__ en el Cuadro de Mando Integral es crear y _mantener_ el tema del Cuadro de Mando Integral de la forma más eficiente posible.
 

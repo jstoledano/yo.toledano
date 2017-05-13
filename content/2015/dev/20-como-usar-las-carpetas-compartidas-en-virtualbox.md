@@ -1,7 +1,7 @@
 Title: Cómo usar las carpetas compartidas en VirtualBox
 Date: 2013/11/22 15:46
 Category: Desarrollo 
-Tags: virtualizacion, opensuse, windows, virtualbox 
+Tags: tools, virtualbox 
 Slug: como-usar-las-carpetas-compartidas-en-virtualbox
 Author: Javier Sanchez Toledano
 Summary: 

@@ -1,7 +1,7 @@
 Title: Transparencia Referencial    
 Date: 2017-05-05 19:50:52
 Category: desarrollo
-Tags: javascript, patterns,  
+Tags: javascript, patterns, es6 
 Series: Programación Funcional  
 Summary: 
 

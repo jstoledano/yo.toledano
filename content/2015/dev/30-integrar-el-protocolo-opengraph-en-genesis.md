@@ -1,7 +1,7 @@
 Title: Integrar el protocolo OpenGraph en Genesis
 Date: 2013/11/28 22:06
 Category: Desarrollo 
-Tags: google, opengraph, genesiswp, facebook, social, wordpress
+Tags: genesiswp, php, wordpress
 Slug: integrar-el-protocolo-opengraph-en-genesis
 Author: Javier Sanchez Toledano
 Summary: 
@@ -70,7 +70,7 @@ Cuando compartimos este contenido en Facebook o en Google+ observarás que usan 
 
 ![OpenGraph en Facebook](/media/20131128/opengraph_facebook.png "OpenGraph en Facebook")
 
-!!! alert-info "Usa Genesis Framework"
+!!! notice "Usa Genesis Framework"
     [Genesis][gen] te facilita contruir rápida y fácilmente increíbles sitios web con WordPress. No importa si eres un principiante o un desarrollador avanzado, [Genesis][gen] te proporciona una base segura y optimizada para los motores de búsqueda con la que puede llegar a extremos que no son posibles usando solo WordPress. Es muy simple -- **!Empieza a usar hoy mismo [Genesis Framework][gen]!**
    
 [gen]: http://ito.mx/genesis

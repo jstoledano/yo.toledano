@@ -18,30 +18,29 @@ El objetivo del mixin es ofrecer a la aplicación las acciones:
 
 El mixin tiene varias dependencias, como [Vue](https://vuejs.org/), [Vuex](https://vuex.vuejs.org/en/), [Axios](https://github.com/mzabriskie/axios) y [localForage](https://localforage.github.io/localForage/) .
 
-```javascript
-import Vue from 'vue'
-import { mapState } from 'vuex'
-import axios from 'axios'
-import VueAxios from 'vue-axios'
-import { store } from '../plugins/store'
-import AlmacenCMI from '../plugins/almacen'
-```
+    :::javascript
+    import Vue from 'vue'
+    import { mapState } from 'vuex'
+    import axios from 'axios'
+    import VueAxios from 'vue-axios'
+    import { store } from '../plugins/store'
+    import AlmacenCMI from '../plugins/almacen'
+
 
 ## Login
 El _login_ es un _método_ que recibe las credenciales del usuario, es decir, el nombre del usuario y las contraseñas y las envía al _endpoint_ de la API para obtener un token. Una clave especial que sirve para demostrarle al servidor API que el usuario está acreditado para realizar operaciones u obtener información de la API.
 
 Esta función la usa un formulario de de ingreso, que le manda un objeto con dos propiedades, `username` y `password`. 
 
-```
-function _login () {
-  axios.post(_loginURL, this.credenciales)
-    .then(response => {
-      let _token = response.data.auth_token
-      this.almacen.setItem('token', _token)
-      store.state.token = _token
-    }).catch(e => console.log(`${e}`))
-}
-```
+    :::js
+    function _login () {
+      axios.post(_loginURL, this.credenciales)
+        .then(response => {
+          let _token = response.data.auth_token
+          this.almacen.setItem('token', _token)
+          store.state.token = _token
+        }).catch(e => console.log(`${e}`))
+    }
 
 Este objeto le pasa al método `post` la URL de login y las credenciales de un usuario. Esta es una promesa que una vez que se resuelve de forma favorable, crea una variable local `_token` para almacenar los datos que devuelve el servidor y guarda los datos tanto en el almacén local como en la variable de estado. Por el momento, el único control de errores es mostrarlo en la consola.
 

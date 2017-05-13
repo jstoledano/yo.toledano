@@ -1,7 +1,7 @@
 Title: Cómo crear post relacionados sin usar plugins
 Date: 2013/11/27 15:47
 Category: Desarrollo 
-Tags: genesiswp, nivelavanzado, wordpress 
+Tags: genesiswp, php, wordpress 
 Slug: como-crear-post-relacionados-sin-usar-plugins
 Author: Javier Sanchez Toledano
 Summary: 

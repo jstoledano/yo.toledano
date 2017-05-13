@@ -1,7 +1,7 @@
 Title: Extender el modelo de usuario en Django
 Date: 2015-08-09 12:42:29 a.m.
 Category: Desarrollo
-Tags:  django
+Tags:  django, models
 Author: Javier Sanchez Toledano
 Summary: 
 

@@ -1,7 +1,7 @@
 Title: Cómo sobreescribir el método save() en Django
 Date: 2013/11/19 19:40
 Category: Desarrollo
-Tags: patterns, methods, save
+Tags: patterns, python, django, metodos
 Slug: como-sobreescribir-el-metodo-save-en-django
 Author: Javier Sanchez Toledano
 Summary:

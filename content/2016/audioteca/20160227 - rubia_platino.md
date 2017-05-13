@@ -1,7 +1,7 @@
 Title: El caso de la rubia platino    
 Date: 2016-02-27 16:03:30
 Category: audioteca
-Tags: rock, lang:es, musica
+Tags: rock, lang:es,
 Summary:  
 
 

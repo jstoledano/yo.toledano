@@ -2,7 +2,7 @@ Control de Documentos para la norma ISO 9001 con Django
 ############################################################
 
 :date: 2015-08-20 20:34:45 GMT-5
-:tags: iso, 9001:2015, django, calidad
+:tags: iso9001, django, calidad
 :category: Desarrollo
 :slug: control-documentos-iso9001-django
 :summary: Cómo controlar los documentos de un sistema de gestión de la calidad ISO 9001 usando Django

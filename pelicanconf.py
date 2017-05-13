@@ -20,7 +20,7 @@ DISQUS_SITENAME = 'toledano'
 PROFILE_IMAGE_URL = 'https://media.toledano.org/images/yo.jpg'
 # COVER_IMG = 'https://media.toledano.org/images/category_add.jpg'
 COVER_IMG = 'https://media.toledano.org/fototeca/portada2-compressed.jpg'
-ARTICLE_COVER = ''
+ARTICLE_COVER = 'https://media.toledano.org/images/article_cover.png'
 DOMAIN = "yo.toledano.org"
 FEEDBURNER = "//feeds.feedburner.com/toledano/rss"
 

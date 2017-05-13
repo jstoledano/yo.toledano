@@ -1,7 +1,7 @@
 Title: The Love We Had
 Date: 2014/02/24 20:17
 Category: Audioteca
-Tags: lang:en, musica, r&b 
+Tags: lang:en, r&b, cover
 Slug: the-love-we-had
 Favorito: True
 Cover: https://media.toledano.org/images/the-love-we-have.jpg

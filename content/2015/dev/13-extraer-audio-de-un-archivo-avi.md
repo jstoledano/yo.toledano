@@ -1,7 +1,7 @@
 Title: Extraer audio de un archivo AVI
 Date: 2013/11/20 16:57
 Category: Desarrollo 
-Tags: tools, media, audio 
+Tags: tools, audio 
 Slug: extraer-audio-de-un-archivo-avi
 Author: Javier Sanchez Toledano
 Summary: 

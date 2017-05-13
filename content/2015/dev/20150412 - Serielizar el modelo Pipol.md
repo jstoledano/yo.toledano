@@ -1,7 +1,7 @@
 Title: Serializar modelos en Django con REST Framework  
 Date: 2015-04-12 12:42:30  
 Category: Desarrollo  
-Tags:  django, rest, cmi, angularjs    
+Tags:  django, restful, api
 Author: Javier Sanchez Toledano  
 Summary: Cómo transfomar modelos de Django en objetos JSON por medio de la serialización.  
 

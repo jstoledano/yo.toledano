@@ -1,7 +1,7 @@
 Title: Anatomía de un Gruntfile, parte 2    
 Date: 2015-10-10 6:25:54 p.m.
 Category: desarrollo
-Tags:  javascript, angularjs 
+Tags:  javascript, tools, frontend 
 Cover: http://media.toledano.org/images/2015/gruntjs1.jpg
 
 Esta es la continuación de [Anatomía de un Gruntfile](https://yo.toledano.org/anatomia-de-un-gruntfile/) y es el tercero de una serie en la que narro mis experiencias desarrollando un [cuadro de mando integral](https://es.wikipedia.org/wiki/Cuadro_de_mando_integral) adaptado a la norma ISO 9001:2015.

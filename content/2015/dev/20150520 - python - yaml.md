@@ -1,7 +1,7 @@
 Title: Generador de clases con Python y YAML 
 Date: 2015-05-20 20:58:42
 Category: Desarrollo
-Tags:  python, webdev
+Tags:  python, patterns,
 Author: Javier Sanchez Toledano
 Summary: Como crear un generador de clases con Python y YAML
 

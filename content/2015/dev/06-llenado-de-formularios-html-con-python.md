@@ -1,7 +1,7 @@
 Title: Llenado de formularios HTML con Python
 Date: 2013/11/18 19:20
 Category: Desarrollo 
-Tags: urllib 
+Tags: python, librerias 
 Slug: llenado-de-formularios-html-con-python
 Summary: 
 

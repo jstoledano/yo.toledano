@@ -1,7 +1,7 @@
 Title: Configuración de Nginx y WordPress
 Date: 2014/01/19 03:25
 Category: Desarrollo 
-Tags: nginx, wordpress 
+Tags: nginx, wordpress, admin
 Slug: configuracion-de-nginx-y-wordpress
 Author: Javier Sanchez Toledano
 Summary: 

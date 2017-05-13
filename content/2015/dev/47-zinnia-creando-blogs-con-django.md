@@ -1,7 +1,7 @@
 Title: Zinnia, creando blogs con Django
 Date: 2014/01/13 05:58
 Category: Desarrollo 
-Tags: krypton, zinnia, paas, webdev 
+Tags: paas, django 
 Slug: zinnia-creando-blogs-con-django
 Author: Javier Sanchez Toledano
 Summary: 

@@ -1,7 +1,7 @@
 Title: Acreditación y Autorización    
 Date: 2016-10-25 00:46:33
 Category: desarrollo
-Tags: Token, Django, Angular
+Tags: django, restful, api
 Series: Angular para Djangonautas
 Summary: 
 

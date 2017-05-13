@@ -1,7 +1,7 @@
 Title: Destacados con etiquetas
 Date: 2013/11/20 17:47
 Category: Desarrollo
-Tags: loops, wp_query, wordpress
+Tags: php, wp_query, wordpress
 Slug: destacados-con-etiquetas
 Author: Javier Sanchez Toledano
 Summary:

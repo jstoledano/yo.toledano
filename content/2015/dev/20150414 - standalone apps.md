@@ -1,7 +1,7 @@
 Title: Aplicaciones reutilizables en Django  
 Date: 2015-04-14 21:35:22  
 Category: Desarrollo  
-Tags:  django, webdev,   
+Tags:  django, patterns,   
 Author: Javier Sanchez Toledano  
 Summary: Cómo crear aplicaciones reusables en Django  
 

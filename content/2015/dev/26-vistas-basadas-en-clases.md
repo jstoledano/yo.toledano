@@ -1,7 +1,7 @@
 Title: Vistas Basadas en Clases
 Date: 2013/11/27 15:43
 Category: Desarrollo 
-Tags: patterns, cbv, views 
+Tags: patterns, python, views, django
 Slug: vistas-basadas-en-clases
 Author: Javier Sanchez Toledano
 Summary: 
@@ -12,7 +12,7 @@ Cuando Django se actualizó a la versión 1.5, reescribí las vistas del blog[^1
 
 Las CBV son geniales porque simplifican la forma en que operamos nuestro código, por ejemplo, la siguiente es la CBV para las entradas individuales.
 
-```language-python
+```python
 class EntradaIndividual(DateDetailView):
     date_field ="pub_date"
     model = Entry
@@ -37,7 +37,7 @@ Pero hay muchas CBV genéricas y conviene que las conozcas todas, por lo que a c
 
 La portada de este blog usa una `ListView` muy simple pero a la vez muy poderosa, porque con solo tres líneas son necesarias para crear la portada con todo y paginación:
 
-```language-python
+```python
 class BlogArchivo(ListView):
     queryset = Entry.objects.order_by('-pub_date', 'id')
     paginate_by = 6
@@ -46,7 +46,7 @@ class BlogArchivo(ListView):
 
 Por otro lado, las categorías también utilizan esta vista `ListView` pero algo más compleja, porque utilizan una variable para generar el `queryset`:
 
-```language-python
+```python
 class CategoriaList(ListView):
     paginate_by = 5
     template_name = "categoria.html"

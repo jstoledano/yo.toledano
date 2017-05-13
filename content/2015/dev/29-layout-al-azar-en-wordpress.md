@@ -1,7 +1,7 @@
 Title: Layout al azar en WordPress
 Date: 2013/11/28 21:59
 Category: Desarrollo 
-Tags: filtros, genesiswp, nivelbasico, wordpress
+Tags: filtros, genesiswp, php, wordpress
 Slug: layout-al-azar-en-wordpress
 Author: Javier Sanchez Toledano
 Summary: 
@@ -35,7 +35,7 @@ function cyberia_layout($opt) {
 
 Como verán, la función es muy simple y cada vez que se recarga la página se genera un nuevo _layout_. Esto al final resulta cansado para el visitante y por eso es solo un concepto.
 
-!!! alert-info "Usa Genesis Framework"
+!!! notice "Usa Genesis Framework"
     [Genesis][gen] te facilita contruir rápida y fácilmente increíbles sitios web con WordPress. No importa si eres un principiante o un desarrollador avanzado, [Genesis][gen] te proporciona una base segura y optimizada para los motores de búsqueda con la que puede llegar a extremos que no son posibles usando solo WordPress. Es muy simple -- **!Empieza a usar hoy mismo [Genesis Framework][gen]!**
    
 [gen]: http://ito.mx/genesis

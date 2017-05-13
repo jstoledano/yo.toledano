@@ -1,7 +1,7 @@
 Title: Enfoque al Cliente
 Date: 2014-08-22 21:15:26
 Category: Calidad
-Tags:  8principios, clientes, enfoques, 
+Tags:  iso9001, principios 
 Author: Javier Sanchez Toledano
 Summary: En qué consiste el enfoque al cliente y qué características tienen las organizaciones que lo aplican.
 

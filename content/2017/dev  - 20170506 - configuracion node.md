@@ -1,7 +1,7 @@
 Title: Configurando un proyecto en Node    
 Date: 2017-05-06 18:33:46
 Category: desarrollo
-Tags: node.js, es6, babel 
+Tags: node.js, es6, javasctipt 
 Summary: 
 Series: Programación Funcional
 

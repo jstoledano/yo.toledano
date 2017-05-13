@@ -1,7 +1,7 @@
 Title: Redirección 301 con htaccess
 Date: 2013/11/20 17:48
 Category: Desarrollo 
-Tags: server, apache 
+Tags: admin, apache,  
 Slug: redireccion-301-con-htaccess
 Author: Javier Sanchez Toledano
 Summary: 

@@ -1,7 +1,7 @@
 Title: Imágenes Destacadas en Genesis Framework  
 Date: 2014/04/20 12:59  
 Category: Desarrollo  
-Tags: GenesisWP, thumbnail, images, WordPress
+Tags: genesiswp, wordpress, php
 Summary: Un repaso rápido sobre cómo usar las imágenes destacadas en Genesis Framework.  
 
 Me doy cuenta que debo de recuperar mi competencia para, no digamos crear temas, simplemente para usar día a día Framework de WordPress [__Genesis__][gen]. Así que voy a escribirme un tutorial sobre cómo usarlo y espero que a ustedes también les ayude.
@@ -65,9 +65,7 @@ Existen varias funciones relacionadas con las miniaturas o __thumbnails__ y las 
 
 Estas son las funciones básicas. En el siguiente artículo de la serie, veremos algunas de las funciones avanzadas.
 
-
-
-!!! alert-info "Usa Genesis Framework"
+!!! notice "Usa Genesis Framework"
     [Genesis][gen] te facilita construir rápida y fácilmente increíbles sitios web con WordPress. No importa si eres un principiante o un desarrollador avanzado, [Genesis][gen] te proporciona una base segura y optimizada para los motores de búsqueda con la que puede llegar a extremos que no son posibles usando solo WordPress. Es muy simple.  
     **!Empieza a usar hoy mismo [Genesis Framework][gen]!**
 

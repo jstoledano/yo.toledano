@@ -1,7 +1,7 @@
 Title: Configurar PostgreSQL en Heroku
 Date: 2014/01/12 01:42
 Category: Desarrollo
-Tags: heroku, webdev, cloud, postgresql, paas
+Tags: postgresql, paas
 Slug: configurar-postgresql-en-heroku
 Author: Javier Sanchez Toledano
 Summary:

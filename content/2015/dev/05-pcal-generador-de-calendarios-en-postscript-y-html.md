@@ -1,7 +1,7 @@
 Title: pcal – Generador de calendarios en PostScript y HTML
 Date: 2013/11/18 19:14
 Category: Desarrollo 
-Tags: tools, ubuntu 
+Tags: tools, 
 Slug: pcal-generador-de-calendarios-en-postscript-y-html
 Author: Javier Sanchez Toledano
 Summary: 

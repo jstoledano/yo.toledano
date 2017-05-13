@@ -116,7 +116,8 @@ s3_upload: publish
 
 upload: publish
 	LC_ALL=es_MX.UTF-8 s3cmd sync $(OUTPUTDIR)/theme/ s3://$(S3_BUCKET)/theme/ -M --acl-public --add-header="Cache-Control: max-age=315360000" --add-header="Content-Encoding: gzip"
-	LC_ALL=es_MX.UTF-8 s3cmd sync $(OUTPUTDIR)/ s3://$(S3_BUCKET) -M --cf-invalidate-default-index --acl-public --add-header="Cache-Control: max-age=7200" --exclude="/theme/*"
+	LC_ALL=es_MX.UTF-8 s3cmd sync $(OUTPUTDIR)/ s3://$(S3_BUCKET) -M --acl-public --add-header="Cache-Control: max-age=7200" --exclude="/theme/*"
+# --cf-invalidate-default-index 
 
 cf_upload: publish
 	cd $(OUTPUTDIR) && swift -v -A https://auth.api.rackspacecloud.com/v1.0 -U $(CLOUDFILES_USERNAME) -K $(CLOUDFILES_API_KEY) upload -c $(CLOUDFILES_CONTAINER) .

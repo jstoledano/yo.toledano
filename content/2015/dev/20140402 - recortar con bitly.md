@@ -1,7 +1,7 @@
 Title: Recortar URL con Bitly
 Date: 2014/04/02 10:44
 Category: Desarrollo
-Tags: Tools, URL
+Tags: tools
 Slug: recortar-url-con-bitly
 Author: Javier Sanchez Toledano
 email: javier@namespace.mx

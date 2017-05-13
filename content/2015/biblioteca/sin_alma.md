@@ -1,6 +1,7 @@
 Title: Sin Alma    
 Date: 2015-10-05 11:05:02 p.m.
-Category: opinion  
+Category: opinion
+Tags: critica, fantasia, steampunk  
 
 <div class="row">
   <div class="col-md-4 col-sm-12">

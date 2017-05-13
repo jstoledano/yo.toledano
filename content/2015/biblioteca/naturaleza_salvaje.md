@@ -1,7 +1,7 @@
 Title: Naturaleza Salvaje    
 Date: 2015-10-04 1:38:55 p.m.
 Category: opinion
-Tags:  fantasia, sci-fi, terror
+Tags:  critica, steampunk, sci-fi
 Summary:
 
 <div class="row">

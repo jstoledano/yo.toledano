@@ -2,6 +2,7 @@ Title: Configurar Bootstrap con Grunt y LESS
 Date: 2015-10-11 9:21:13 a.m.
 Category: desarrollo
 Cover: https://media.toledano.org/images/2015/bootstrap.png
+Tags: tools, javascript, frontend
 
 Siguiendo con la serie de artículos sobre la experiencia de crear un nuevo Cuadro de Mando Integral con enfoque en la norma ISO 9001:2015, en esta nueva entrega vamos a modificar algunas opciones de framework Bootstrap.
 

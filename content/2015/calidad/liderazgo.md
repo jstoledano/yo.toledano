@@ -1,7 +1,7 @@
 Title: Liderazgo, 8 principios de la calidad 
 Date: 2014-08-23 21:31:37
 Category: Calidad
-Tags:  8principios, liderazgo, iso9001
+Tags:  principios, iso9001
 Author: Javier Sanchez Toledano
 Summary: Qué es el principio de Liderazgo y como nos sirve para generar calidad, según la norma ISO 9001.
 

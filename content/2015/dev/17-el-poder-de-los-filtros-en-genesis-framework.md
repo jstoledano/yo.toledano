@@ -1,7 +1,7 @@
 Title: El poder de los filtros en Genesis Framework
 Date: 2013/11/21 16:07
 Category: Desarrollo 
-Tags: filtros, genesiswp , WordPress
+Tags: php, filtros, genesiswp , wordpress
 Slug: el-poder-de-los-filtros-en-genesis-framework
 Author: Javier Sanchez Toledano
 Summary: 

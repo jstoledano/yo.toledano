@@ -1,7 +1,7 @@
 Title: Nuestro mayor miedo
 Date: 2014/02/21 00:00
 Category: Trinos
-Tags: citas, mandela
+Tags: citas
 Slug: nuestro-mayor-miedo
 Author: Javier Sanchez Toledano
 Summary: Una inspiradora frase, atribuida con frecuencia a Nelson Mandela.

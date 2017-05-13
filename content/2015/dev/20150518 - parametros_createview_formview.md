@@ -1,7 +1,7 @@
 Title: Pasar parámetros con CreateView y ModelForm en Django
 Date: 2015-05-18 9:20:48
 Category: Desarrollo
-Tags:  django, createview, formview
+Tags:  django, views, patterns, forms
 Author: Javier Sanchez Toledano
 Summary: Como pasar un parámetro para prellenar el formulario con CreateView y ModelForm.
 

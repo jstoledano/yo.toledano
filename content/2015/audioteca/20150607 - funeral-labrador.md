@@ -1,7 +1,7 @@
 Title: Funeral de un labrador
 Date: 2015-06-07 22:29:35
 Category: audioteca
-Tags:  lang:pr, poesia, musica
+Tags:  lang:pr, poesia
 Author: Javier Sanchez Toledano
 Summary: Una triste canción basada en una obra de teatro y un libro de poemas.
 

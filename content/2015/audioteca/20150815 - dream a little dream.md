@@ -1,7 +1,7 @@
 Title: Dream a Little Dream of Me
 Date: 2015-08-15 9:38:27 a.m.
 Category: Audioteca
-Tags:  lang:en, jazz, musica
+Tags:  lang:en, jazz
 Summary:
 Favorito: 1
 Cover: https://media.toledano.org/images/audioteca/20150815-dream-a-little-dream.jpg

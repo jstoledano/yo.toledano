@@ -1,7 +1,7 @@
 Title: Mixins en LESS    
 Date: 2015-09-27 2:10:35 p.m.
 Category: desarrollo
-Tags:  
+Tags: css, less, patterns
 Summary: 
 
 LESS es un pre-procesador de hojas de estilo que permite editarlas de forma muy rápida,y como dicen ahora, de forma muy semántica, es decir, de forma lógica que se explica de forma clara por si misma.

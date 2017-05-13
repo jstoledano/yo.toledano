@@ -1,7 +1,7 @@
 Title:  Diálogo entre el Papa y Jesucristo   
 Date: 2016-02-22 17:16:38
 Category: audioteca
-Tags: salsa, lang:es, musica 
+Tags: salsa, lang:es, trova 
 Summary: 
 
 En 1978 el recién electo papa Juan Pablo II visitó México, en lo que fue su primer viaje fuera de Italia. Específicamente, visitó la Ciudad de México, Guadalajara, Puebla y Monterrey. Lo recibió con honores de Jefe de Estado, el entonces presidente José López Portillo. __José de Molina__, _cantautor_ de protesta, realizó una severa crítica a su vsita y a los jerarcas de la Iglesia; y no solo eso, en su genialidad, la hizo a ritmo de salsa.

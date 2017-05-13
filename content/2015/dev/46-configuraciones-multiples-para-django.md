@@ -1,7 +1,7 @@
 Title: Configuraciones Múltiples para Django
 Date: 2014/01/12 10:05
 Category: Desarrollo 
-Tags: patterns, krypton, webdev, deploy 
+Tags: paas, django
 Slug: configuraciones-multiples-para-django
 Author: Javier Sanchez Toledano
 Summary: 

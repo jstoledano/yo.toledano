@@ -1,7 +1,7 @@
 Title: Secuencia e Interacción
 Date: 2015-08-09 12:37:42 a.m.
 Category: calidad
-Tags:  definiciones
+Tags:  iso9001, definiciones
 Author: Javier Sanchez Toledano
 Summary: 
 

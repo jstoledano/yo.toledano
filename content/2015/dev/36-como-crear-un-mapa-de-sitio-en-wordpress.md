@@ -1,7 +1,7 @@
 Title: Cómo crear un mapa de sitio en WordPress
 Date: 2013/12/27 02:38
 Category: Desarrollo 
-Tags: genesiswp, templates, php, hooks, sitemap, wordpress
+Tags: genesiswp, templates, php, wordpress
 Slug: como-crear-un-mapa-de-sitio-en-wordpress
 Author: Javier Sanchez Toledano
 Summary: 
@@ -203,7 +203,7 @@ Aqui tienes el código completo de la plantilla.
 
     genesis();
 
-!!! alert-info "Usa Genesis Framework"
+!!! notice "Usa Genesis Framework"
     [Genesis][gen] te facilita contruir rápida y fácilmente increíbles sitios web con WordPress. No importa si eres un principiante o un desarrollador avanzado, [Genesis][gen] te proporciona una base segura y optimizada para los motores de búsqueda con la que puede llegar a extremos que no son posibles usando solo WordPress. Es muy simple -- **!Empieza a usar hoy mismo [Genesis Framework][gen]!**
 
 [gen]: http://conxb.com/genesismx

@@ -1,7 +1,7 @@
 Title: Aplicaciones reusables con Django
 Date: 2015-08-09 12:45:20 a.m.
 Category: Desarrollo
-Tags:  django
+Tags:  django, setuptools, python
 Author: Javier Sanchez Toledano
 Summary: 
 

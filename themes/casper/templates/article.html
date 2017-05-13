@@ -59,7 +59,21 @@
     {
       "@context": "http://schema.org",
       "@type": "Article",
-      "publisher": "Yo, Toledano",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ SITEURL }}/{{ article.url }}"
+      },      
+      "publisher": {
+        "@type" : "Organization",
+        "url" : "https://facebook.com/yo.toledano",
+        "name": "Yo, Toledano",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "{{ SITELOGO }}",
+          "width": 307,
+          "height": 54
+        }
+      },
       "author": {
         "@type": "Person",
         "name": "{{ AUTHOR }}",
@@ -72,9 +86,17 @@
       "datePublished": "{{ article.date|strftime('%Y-%m-%dT%H:%M:%S.%f%z') }}",
       "dateModified": "{{ article.date|strftime('%Y-%m-%dT%H:%M:%S.%f%z') }}",
       {% if article.cover %}
-      "image": "{{ article.cover }}",
+      "image": {
+        "@type": "ImageObject",
+        "url": "{{ article.cover }}"
+      },
       {% else %}
-      "image": "{{ ARTICLE_COVER }}",
+      "image": {
+        "@type": "ImageObject",
+        "url": "{{ ARTICLE_COVER }}",
+        "height": 1392,
+        "width": 696
+      },
       {% endif %}
       "keywords": "{{ article.category.slug }}{% for tag in article.tags %} tag-{{ tag.slug }}{% endfor %}",
       "description": "{% if article.summary %}{{ article.summary|striptags }}{% else %}{{ article.content|truncate(260, False)|striptags }}{% endif %}"
@@ -99,18 +121,18 @@
     Archivada en 
     <a style="color=#fff; text-decoration: none; text-shadow: 1px 1px #fff;" 
       href="{{ SITEURL }}/{{ article.category.url }}">
-      <i class="fa fa-folder-open"></i> <strong>{{ CATS[article.category][0] }}</strong>
+      <i class="fa fa-{{ CATS[article.category][2] }}"></i> <strong>{{ CATS[article.category][0] }}</strong>
     </a>
   </h2>
 {% endblock header_title %}
 
 {% block content %}
 <main id="content" class="content" role="main">
-  <article class="post" itemscope="" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+  <article class="post">
     <header class="post-header">
       <h1 class="post-title" itemprop="headline">{{ article.title|striptags }}</h1>
       <section class="post-meta">
-        <time class="post-date" itemprop="datePublished" datetime="{{ article.date|strftime('%YYYY-%MM-%DD') }}">
+        <time class="post-date" itemprop="datePublished" datetime="{{ article.date|strftime('%Y-%m-%dT%H:%M:%S.%f%z') }}">
         <i class="fa fa-calendar" aria-hidden="true"></i> {{ article.date|strftime('%A, %B %d de %Y') }}</time> 
         &mdash;
         Etiquetado como {% for tag in article.tags %}<a href="{{ SITEURL }}/{{ tag.url }}"><i class="fa fa-tag"></i> {{ tag.name | lower }}{% if not loop.last %}, {% endif %}</a>{% endfor %}

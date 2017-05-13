@@ -1,7 +1,7 @@
 Title: El Periplo Toledano 
 Date: 2014/03/07 21:48
 Category: Trinos
-Tags: webmasters, seo, google
+Tags: personal
 Slug: el-periplo-toledano
 Summary: De como un pequeño error puede tener consecuencias enormes.
 

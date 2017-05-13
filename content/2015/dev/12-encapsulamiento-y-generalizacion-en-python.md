@@ -1,7 +1,7 @@
 Title: Encapsulamiento y Generalización en Python
 Date: 2013/11/20 16:28
 Category: Desarrollo
-Tags: patterns, poo
+Tags: patterns, python
 Slug: encapsulamiento-y-generalizacion-en-python
 Author: Javier Sanchez Toledano
 Summary:

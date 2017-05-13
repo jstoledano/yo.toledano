@@ -1,7 +1,7 @@
 Title: Configurar varios proyectos en un solo servidor
 Date: 2014/01/16 03:52
 Category: Desarrollo 
-Tags: nginx, webdev 
+Tags: nginx, admin 
 Slug: configurar-varios-proyectos-en-un-solo-servidor
 Author: Javier Sanchez Toledano
 Summary: 

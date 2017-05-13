@@ -1,7 +1,7 @@
 Title: Cómo agregar etiquetas de verificación de Google
 Date: 2014/04/09 10:00
 Category: Desarrollo
-Tags: GenesisWP, Google, SEO, WordPress
+Tags: genesiswp, wordpress, php
 Summary: Cómo agregar las etiquetas de verificación para los buscadores usando los hooks de Genesis Framework para un control más preciso de su localización.
 
 Recientente integré en Yo, Toledano un reproductor de música basado en jQuery 2.0. Así que me enfrenté al problema de cambiar la versión de jQuery en WordPress de la versión 1.10 a la versión más actual 2.0.2.

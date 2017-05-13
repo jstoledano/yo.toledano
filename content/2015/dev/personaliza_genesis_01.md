@@ -1,7 +1,7 @@
 Title: Personalizar Genesis
 Date: 2015-08-09 12:46:18 a.m.
 Category: Desarrollo
-Tags:  wordpress, genesis
+Tags:  wordpress, genesis, php
 Author: Javier Sanchez Toledano
 Summary:
 

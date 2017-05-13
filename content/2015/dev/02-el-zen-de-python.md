@@ -1,7 +1,7 @@
 Title: El Zen de Python
 Date: 2013/11/18 18:59
 Category: Desarrollo 
-Tags: humor, patterns 
+Tags: python, patterns 
 Slug: el-zen-de-python
 Author: Javier Sanchez Toledano
 Summary: La filosofía de Python con un poco de humor

@@ -1,7 +1,7 @@
 Title: Como crear un mapa de sitio con Django
 Date: 2013/12/27 03:12
 Category: Desarrollo 
-Tags: views, sitemap, templates 
+Tags: views, django, python, templates 
 Slug: como-crear-un-mapa-de-sitio-con-django
 Author: Javier Sanchez Toledano
 Summary: 

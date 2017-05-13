@@ -1,7 +1,7 @@
 Title: Promesas en VueJS    
 Date: 2017-03-26 23:21:51
 Category: desarrollo
-Tags: vuejs, vuex, promises, es6  
+Tags: vuejs, promises, es6  
 Summary: 
 
 Me encuentro frente a un problema que no he podido resolver. Tratando de recrear un servicio de AngularJS en VueJS para gestionar la acreditación[^1], no puedo poner el _token_ en una variable.
