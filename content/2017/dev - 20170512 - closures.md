@@ -3,7 +3,6 @@ Date: 2017-05-12 14:00:00
 Category: desarrollo
 Tags: javascript, patterns, es6
 Summary: 
-Status: draft
 
 La verdad no encontré una buena traducción de __*closure*__. Literalmente, significa _"cierre"_, pero no tiene mucho sentido en el contexto de la programación funcional. Es uno de esos conceptos que para comprenderlo hay que verlo o hacerlo.
 
@@ -25,46 +24,45 @@ Técnicamente, una _closure_ tiene tres alcances:
 
 Vamos a revisar estos tres aspectos de forma independiente usando un ejemplo. Para empezar, tenemos el siguiente ejemplo:
 
-```javascript
-function externa(){
-  function interna(){
-    let a = 5
-    console.log(a)
-  }
-  interna()    // llamamos a la función interna
-}
-```
+    :::javascript
+    function externa(){
+      function interna(){
+        let a = 5
+        console.log(a)
+      }
+      interna()    // llamamos a la función interna
+    }
+
 
 que imprime en la consola el valor de `a` cuando se llama a `interna()`. Esto se debe al punto uno: una función _closure_ puede acceder a las variables declaradas en su propia definición.
 
 Ahora vamos a modificar un poco el código anterior...
 
-```javascript
-let global = "global"
-function externa(){
-  function interna(){
-    let a = 5
-    console.log(global)
-  }
-  interna()    // llamamos a la función interna
-}
-```
+    :::javascript
+    let global = "global"
+    function externa(){
+      function interna(){
+        let a = 5
+        console.log(global)
+      }
+      interna()    // llamamos a la función interna
+    }
+
 
 Ahora, cuando se ejecute la función `interna()` se imprimerá el valor de `global` (que también es `global`). Esto es porque las _closures_ pueden acceder a las variables globales (punto 2).
 
 El punto 3, es muy interesante y lo vamos a ejemplificar con el siguiente fragmento.
 
-```javascript
-let global = "global"
-function externa(){
-  let externa = "externa"
-  function interna(){
-    let a = 5
-    console.log(externa)
-  }
-  interna()    // llamamos a la función interna
-}
-```
+    :::javascript
+    let global = "global"
+    function externa(){
+      let externa = "externa"
+      function interna(){
+        let a = 5
+        console.log(externa)
+      }
+      interna()    // llamamos a la función interna
+    }
 
 ahora la variable que se imprime es `externa`, como corresponde. Puede parecer muy simple, pero esta es una de las características más importantes de las `closures`.
 
@@ -74,23 +72,20 @@ ahora la variable que se imprime es `externa`, como corresponde. Puede parecer m
 ### El contexto y las closures
 Las _closures_ tienen otra característica importante: _recuerdan su contexto_. Veamos este ejemplo:
 
-```js
-let fn = (arg) => {
-  let externa = "Visible"
-  let fnInterna = () => {
-    console.log(externa)
-    console.log(arg)
-  }
-  return fnInterna
-}
-```
+    :::js
+    let fn = (arg) => {
+      let externa = "Visible"
+      let fnInterna = () => {
+        console.log(externa)
+        console.log(arg)
+      }
+      return fnInterna
+    }
 
 El código es, relativamente, simple. La función `fnInterna()` es una función _closure_ de `fn()` y `fn` regresa a `fnInterna` cuando se llama. Hasta aquí, nada nuevo. Pero veamos como funciona.
 
-```
-> let closureFn = fn(5)
-> closureFn()
-Visible
-5
-```
-
+    :::js
+    > let closureFn = fn(5)
+    > closureFn()
+    Visible
+    5
