@@ -124,7 +124,8 @@ STATIC_PATHS = ['images', 'extra']
 EXTRA_PATH_METADATA = {
     'extra/robots.txt': {'path': 'robots.txt'},
     'extra/favicon.ico': {'path': 'favicon.ico'},
-    'extra/BingSiteAuth.xml': {'path': 'BingSiteAuth.xml'}
+    'extra/BingSiteAuth.xml': {'path': 'BingSiteAuth.xml'},
+    'extra/keybase.txt': {'path': 'keybase.txt'}
 }
 
 SITEMAP = {
