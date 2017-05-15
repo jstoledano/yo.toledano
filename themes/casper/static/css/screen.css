@@ -2336,6 +2336,16 @@ ul.tagcloud .list-group-item <span>.badge {
     text-transform: bold;
   }
 
+.page-description {
+  color: whitesmoke;
+  background-color: rgba(0,0,0,.5);
+  padding: 5px;
+}
+
+.page-description a, .page-description a:hover {
+  color:white;
+}
+
 
 /* ==========================================================================
    14. Animations

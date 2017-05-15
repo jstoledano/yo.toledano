@@ -114,13 +114,9 @@
 
 {% block header_title %}
   <h1 class="page-title" itemprop="headline"><i class="fa fa-newspaper-o" aria-hidden="true"></i> {{ article.title }}</h1>
-  <h2 
-    class="page-description" 
-    itemprop="description" 
-    style="text-shadow: 1px 1px #000;">
+  <h2 class="page-description" itemprop="description">
     Archivada en 
-    <a style="color=#fff; text-decoration: none; text-shadow: 1px 1px #fff;" 
-      href="{{ SITEURL }}/{{ article.category.url }}">
+    <a href="{{ SITEURL }}/{{ article.category.url }}">
       <i class="fa fa-{{ CATS[article.category][2] }}"></i> <strong>{{ CATS[article.category][0] }}</strong>
     </a>
   </h2>
