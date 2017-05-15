@@ -3,6 +3,7 @@ Date: 2017-05-12 14:00:00
 Category: desarrollo
 Tags: javascript, patterns, es6
 Summary: 
+Status: draft
 
 La verdad no encontré una buena traducción de __*closure*__. Literalmente, significa _"cierre"_, pero no tiene mucho sentido en el contexto de la programación funcional. Es uno de esos conceptos que para comprenderlo hay que verlo o hacerlo.
 
