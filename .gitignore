@@ -6,6 +6,7 @@ plugins/
 *.pid
 .idea/
 cache/
+*.min.css
 
 
 # Byte-compiled / optimized / DLL files
