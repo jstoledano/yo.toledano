@@ -117,6 +117,6 @@ Para entender mejor como es que al llamar a `closureFn()` se imprime `Visible` y
 
 ### Revisando la función `ordenarPor`
 
- 
+
 
 
