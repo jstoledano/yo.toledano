@@ -16,7 +16,6 @@ DEFAULT_METADATA = {
     'email': 'js.toledano@me.com',
     'author': 'Javier Sanchez Toledano'
 }
-DISQUS_SITENAME = 'toledano'
 PROFILE_IMAGE_URL = 'https://media.toledano.org/images/yo.jpg'
 # COVER_IMG = 'https://media.toledano.org/images/category_add.jpg'
 COVER_IMG = 'https://media.toledano.org/fototeca/portada2-compressed.jpg'
@@ -72,7 +71,7 @@ PLUGIN_PATHS = ['../pelican-plugins', ]
 PLUGINS = ['tag_cloud', 'neighbors', 'series', 'sitemap']
 MARKDOWN = {
     'extension_configs': {
-        'markdown.extensions.codehilite': {}, #{'css_class': 'highlight'},
+        'markdown.extensions.codehilite': {},
         'markdown.extensions.extra': {},
         'markdown.extensions.admonition': {},
         'markdown.extensions.meta': {},
