@@ -90,3 +90,33 @@ El código es, relativamente, simple. La función `fnInterna()` es una función 
     > closureFn()
     Visible
     5
+
+Para entender mejor como es que al llamar a `closureFn()` se imprime `Visible` y `5` en la pantalla vamos ver que sucede tras bambalinas:
+
+1. Cuando llamamos el código siguiente:
+
+       let closureFn = fn(5)
+
+    llamamos a la función `fn` con el argumento `5`. Tal como está definida nuestra función, regresará `fnInterna()`.
+
+1. En este momento ocurre lo interesante. Cuando se regresa la función `fnInterna`, la máquina virtual de JavaScript ve una _closure_ y establece su __alcance__ de forma adecuada. Y comovimos anteriormente, las _closures_ tienen acceso a los tres niveles de alcance. Estos tres niveles se __*encadenan*__ (los valores de `arg` y `externa` se establecerán en el alcance del nivel de `fnInterna`) cuando se regresa `fnInterna`. La función regresa se almacena en `closureFn`que recuerda a `arg` y `externa` porque están en el alcance encadenado.
+
+1. Cuando finalmente llamamos a `closureFn` con
+
+        closureFn()
+
+    imprime
+
+        Visible
+        5
+
+ Como podemos observar por la salida, `closureFn` recuerda su contexto (es decir el encadenamiento de los alcances, por ejemplo `externa` y `arg`) cuando es creada en el paso dos, por lo que el `console.log` funciona apropiadamente.
+
+ Si se preguntan cuándo usar este tipo de funciones, la verdad es que ya lo hicimos en nuestra función `ordenarPor` que definimos en un [artículo anterior](/desarrollo/funciones-de-primer-orden-ii.html#la-funcion-ordenarpor).
+
+
+### Revisando la función `ordenarPor`
+
+ 
+
+
