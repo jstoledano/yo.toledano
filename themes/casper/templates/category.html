@@ -4,6 +4,13 @@
 {% block template_type %}tag-template{% endblock %}
 
 {% block title %}{{ CATS[category][0]|striptags }} - {{ super() }}{% endblock title %}
+{% block meta_description -%}
+  {% if articles_page.number == 1 -%}
+    Este es el archivo de la categoría {{ CATS[category][0] }} - {{ CATS[category][1] }}
+  {%- else -%}
+    Esta es la página número {{ articles_page.number }} del archivo del tema {{ CATS[category][0] }}
+  {%- endif %}
+{%- endblock meta_description %}
 
 {% block html_head %}
 <style type="text/css">

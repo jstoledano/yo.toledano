@@ -6,6 +6,15 @@
   <h1 class="page-title" itemprop="headline"><i class="fa fa-tag"></i> {{ tag }}</h1>
 {% endblock %}
 
+{% block title %}Etiqueta: {{ tag }} - {{ super() }}{% endblock title %}
+{% block meta_description -%}
+  {% if articles_page.number == 1 -%}
+    Este es el archivo de la etiqueta {{ tag }}
+  {%- else -%}
+    Esta es la página número {{ articles_page.number }} del archivo de la etiqueta {{ tag }}
+  {%- endif %}
+{%- endblock meta_description %}
+
 {% block content %}
 <main id="content" class="content" role="main" itemprop="mainContentOfPage" itemscope="" itemtype="http://schema.org/Blog">
   <div class="extra-pagination inner">

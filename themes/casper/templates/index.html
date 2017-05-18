@@ -10,6 +10,18 @@
   {% endif %}
 {% endblock html_head %}
 
+{% block meta_description %}
+  {% if articles_page.number == 1 -%}
+    Este es mi blog personal donde escribo sobre mis gustos y pasiones: Desarrollo Web usando
+    Python, Django, JavaScript, principalmente. También sobre temas de calidad y productividad.
+    Y música, fotografía, crítica literaria y cine.
+  {%- else -%}
+    Esta es la página {{ articles_page.number }} del índice de 'Yo, Toledano', un blog personal
+    enfocado en el desarrollo web, django, python, javascript, calidad, ISO 9001, música,
+    literatura y fotografía.
+  {%- endif %}
+{%- endblock %}
+
 {% block header_type %}{% endblock %}
 {% block content %}
 <main id="content" class="content" role="main" itemprop="mainContentOfPage" itemscope="" itemtype="http://schema.org/Blog">
