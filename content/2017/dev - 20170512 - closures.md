@@ -150,3 +150,6 @@ esto es lo que pasa
         (a, b) => { /* implementación */ }
 
 
+1. Ahora que la función devuelta lleva el valor de propiedad en su contexto, usará el valor regresado donde sea apropiado y cuando sea necesario.
+
+Las _closures_ son una característica muy usada en JavaScript y conforme avancemos en el estudio del lenguaje y la programación funcional veremos más ejemplos que nos ayuden a dominar este concepto.
