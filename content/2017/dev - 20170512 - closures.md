@@ -137,7 +137,7 @@ Cuando llamamos a la función de esta forma:
 
 esto es lo que pasa
 
-1. `sortBy` regresa una nueva función que toma dos argumentos como estos:
+1. `ordenarPor` regresa una nueva función que toma dos argumentos como estos:
 
         :::javascript
         (a, b) => { /* implementación */ }
