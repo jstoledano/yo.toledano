@@ -1,9 +1,8 @@
 Title: Que son las closures    
-Date: 2017-05-12 14:00:00
+Date: 2017-05-17 19:37:22
 Category: desarrollo
 Tags: javascript, patterns, es6
-Summary: 
-Status: draft
+Summary:
 
 La verdad no encontré una buena traducción de __*closure*__. Literalmente, significa _"cierre"_, pero no tiene mucho sentido en el contexto de la programación funcional. Es uno de esos conceptos que para comprenderlo hay que verlo o hacerlo.
 
@@ -50,7 +49,7 @@ Ahora vamos a modificar un poco el código anterior...
     }
 
 
-Ahora, cuando se ejecute la función `interna()` se imprimerá el valor de `global` (que también es `global`). Esto es porque las _closures_ pueden acceder a las variables globales (punto 2).
+Ahora, cuando se ejecute la función `interna()` se imprimirá el valor de `global` (que también es `global`). Esto es porque las _closures_ pueden acceder a las variables globales (punto 2).
 
 El punto 3, es muy interesante y lo vamos a ejemplificar con el siguiente fragmento.
 
@@ -95,7 +94,8 @@ Para entender mejor como es que al llamar a `closureFn()` se imprime `Visible` y
 
 1. Cuando llamamos el código siguiente:
 
-       let closureFn = fn(5)
+        :::javascript
+        let closureFn = fn(5)
 
     llamamos a la función `fn` con el argumento `5`. Tal como está definida nuestra función, regresará `fnInterna()`.
 
@@ -103,20 +103,50 @@ Para entender mejor como es que al llamar a `closureFn()` se imprime `Visible` y
 
 1. Cuando finalmente llamamos a `closureFn` con
 
+        :::javascript
         closureFn()
 
     imprime
 
+        :::javascript
         Visible
         5
 
  Como podemos observar por la salida, `closureFn` recuerda su contexto (es decir el encadenamiento de los alcances, por ejemplo `externa` y `arg`) cuando es creada en el paso dos, por lo que el `console.log` funciona apropiadamente.
 
- Si se preguntan cuándo usar este tipo de funciones, la verdad es que ya lo hicimos en nuestra función `ordenarPor` que definimos en un [artículo anterior](/desarrollo/funciones-de-primer-orden-ii.html#la-funcion-ordenarpor).
+ Si se preguntan cuándo usar este tipo de funciones, la verdad es que ya lo hicimos en nuestra función `ordenarPor`.
 
 
 ### Revisando la función `ordenarPor`
 
+Vamos a revisar rápidamente la función `ordenarPor` que definimos en un [artículo anterior](/desarrollo/funciones-de-primer-orden-ii.html#la-funcion-ordenarpor).
 
+
+    :::javascript
+    const _ordenarPor = (propiedad) => {
+      return (a, b) => {
+        let resultado = (a[propiedad] < b[propiedad]) ? -1 : (a[propiedad] > b[propiedad]) ? 1 : 0
+        return resultado
+      }
+    }
+
+Cuando llamamos a la función de esta forma:
+
+    :::javascript
+    ordenarPor("nombre")
+
+esto es lo que pasa
+
+1. `sortBy` regresa una nueva función que toma dos argumentos como estos:
+
+        :::javascript
+        (a, b) => { /* implementación */ }
+
+1. Ahora que sabemos un poco mas acerca de las _closures_, estamos conscientes que la función devuelta tiene acceso a `propiedad` de la función `ordenarPor`. Ya que la función solo se devuelve cuando se llama a `ordenarPor`, el argumento `propiedad` se resuelve con un valor, por lo tanto, la función devuelta traerá el _contexto_ junto con ella.
+
+        :::javascript
+        // el alcance se anexa a las closure
+        propiedad = "valorDevuelto"
+        (a, b) => { /* implementación */ }
 
 
