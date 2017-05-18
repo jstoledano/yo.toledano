@@ -7,7 +7,7 @@ plugins/
 .idea/
 cache/
 *.min.css
-
+.c9/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
