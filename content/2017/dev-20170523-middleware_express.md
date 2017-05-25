@@ -59,8 +59,22 @@ Estos son los métodos y propiedades relacionados con el objeto `req`, así como
 |`req.get(encabezado)`|Contiene los encabezados de la petición HTTP|
 |`req.accepts(tipos)`|Verifica si el cliente los tipos de medios indicados|
 |`req.is(tipo)`|Verifica si la petición entrante es de un tipo de medio en particular|
-|||
-
+|`req.ip`|La IP del cliente|
+|`req.ips`|La IP del cliente junto con todos los proxies a través de los cuales se conecta|
+|`req.path`|La ruta solicitada|
+|`req.host`|_Hostname_ desde el encabezado HTTP|
+|`req.fresh`|Verifica si la solicitud todavía esta _fresca_|
+|`req.stale`|Verifica si la petición está congelada|
+|`req.xhr`|Verifica se la petición se hizo vía una solicitud AJAX|
+|`req.protocol`|El protocolo usado para hacer la petición|
+|`req.secure`|Verifica si la conexión es segura|
+|`req.subdomains`|Subdominios en el _hosts_|
+|`req.url`|La ruta de la petición, junto con los parámetros de consulta|
+|`req.originaUrl`|Se usa como respaldo de `req.url`|
+|`req.acceptedLanguages`|Una lista de los lenguajes aceptados por el cliente|
+|`req.acceptsLanguage(lenguaje)`|Verifica si el cliente acepta `lenguaje`|
+|`req.acceptedCharsets`|Una lista de los conjuntos de caracteres aceptados por el cliente|
+|`req.acceptsCharsets(charset)`|Verifica si el cliente acepta el conjunto de caracteres `charset`|
 
 ## Qué son los middlewares o intermediarios
 Los *middlewares* o __intermediarios__ son funciones de JavaScript creadas para manejar las solicitudes HTTP de una aplicación Express. Pueden manipular los objetos de solicitud y de respuesta o realizar acciones aisladas o terminar el flujo de la solicitud al enviar la respuesta al cliente o al pasar el control al siguiente intermediario.
@@ -69,15 +83,16 @@ Los intermediarios se cargan en una aplicación Express usando el método `app.u
 
  Vamos a crear un ejemplo para nuestro servidor. Lo único que va a hacer es imprimir la dirección IP del cliente que haga la solicitud. Puede que parezca un intermediario muy simplón, pero nos dará una idea de como funcionan los intermediarios o _middleware_.
 
-    :::javascript
-    /**
-     * Obtiene la IP del cliente
-     * @param req.ip La IP del cliente, tomada de la solicitud.
-     */
-    app.use((req, res, next) => {
-      console.log(`Solicitud hecha desde ${req.ip}`)
-      next()
-    })
+```javascript
+/**
+ * Obtiene la IP del cliente
+ * @param req.ip La IP del cliente, tomada de la solicitud.
+ */
+app.use((req, res, next) => {
+  console.log(`Solicitud hecha desde ${req.ip}`)
+  next()
+})
+```
 
 Como podemos ver, un intermediario es solo una función que acepta tres parámetros: `req`, `res` y `next`. El parámetro `req` es el objeto enviado con la solicitud. `res` es el objeto devuelto como respuesta y `next` es una referencia al siguiente intermediario en el flujo. Cualquier intermediario puede terminar una solicitud enviando una respuesta de regreso al cliente usando uno de los métodos de respuesta del objeto `res`. Si un intermediario no llama a un método de respuesta __debe llamar al siguiente intermediario en el flujo__, de lo contrario la aplicación se quedaría colgada.
 
