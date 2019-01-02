@@ -22,12 +22,17 @@
     {% block metadcterms  %}{% endblock metadcterms  %}
     {% block html_head    %}{% endblock html_head    %}
   </head>
-  <body class="{% block template_type %}home-template{% endblock %} nav-closed" itemscope itemtype="http://schema.org/WebPage">
+  <body 
+    class="{% block template_type %}home-template{% endblock %} nav-closed" 
+    itemscope itemtype="http://schema.org/WebPage">
     {% include "partials/_metaweb.html" %}
     {% include 'partials/_navigation.html' %}
     <div class="site-wrapper">
 
-      <header class="main-header post-head" style="background-image: url('{% block header_image %}{{ COVER_IMG }}{% endblock %}');" itemscope itemtype="http://schema.org/WPHeader">
+      <header 
+        class="main-header post-head" 
+        style="background-image: url('{% block header_image %}{{ COVER_IMG }}{% endblock %}');" 
+        itemscope itemtype="http://schema.org/WPHeader">
         <nav class="main-nav overlay clearfix">
           {% if SITELOGO %}
             <a href="{{ SITEURL }}/index.html" class="blog-logo">
