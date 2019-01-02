@@ -335,7 +335,7 @@ Por motivos de trabajo, por convicción y por gusto seleccioné PostgreSQL como 
 
     javier@dev:~$ sudo apt-get install postgresql postgresql-contrib
 
-Y ahora es momento de configurar a nuestro usuario, administrador de base de datos, por lo que debemos hacer lo siguiente, escribir el nombre del usuario,una contraseña y elegir si el usuario recién creado tendrá permisos para crear usuarios y bases.
+Y ahora es momento de configurar a nuestro usuario, administrador de base de datos, por lo que debemos hacer lo siguiente, escribir el nombre del usuario, una contraseña y elegir si el usuario recién creado tendrá permisos para crear usuarios y bases.
 
     javier@dev:~$ sudo su - postgres
     postgres@dev:~$ createuser -P
@@ -476,7 +476,7 @@ Ahora debemos ajustar la configuración del proyecto al nuevo servidor, solo en 
 En mi caso, el archivo sería `producción.py`, pero la base de datos se llama igual, así como mi usuario.
 
 
-En el siguiente artículo veremos como etá hecho este blog, pieza por pieza.
+En el siguiente artículo veremos como está hecho este blog, pieza por pieza.
 
 [^1]: Me salgo del tema, lo sé, pero estoy usando un ejemplo vivo en un servidor real, los errores que aparecen, los resuelvo en el momento y los documento para que quede constancia.
 

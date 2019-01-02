@@ -76,6 +76,33 @@ Estos son los métodos y propiedades relacionados con el objeto `req`, así como
 |`req.acceptedCharsets`|Una lista de los conjuntos de caracteres aceptados por el cliente|
 |`req.acceptsCharsets(charset)`|Verifica si el cliente acepta el conjunto de caracteres `charset`|
 
+## El objeto respuesta
+El objeto respuestas, comúnmente denominado como `res` se crea junto con el objeto `req` y aunque puede parecer extraño que se creen al mismo tiempo es necesario para que todos los intermediarios o *middlewares* puedan trabajar con ambos objetos antes de pasar el control al siguiente intermediario.
+
+A continuación vemos una lista con las propiedades y métodos del objeto *respuesta*.
+
+|Propiedad/Método|Descripción|
+|:---|:---|
+|`res.status(code)`|Establece el código de respuesta HTTP|
+|`res.set(campo, [valor])`|Configura encabezados HTTP de respuesta|
+|`res.cookie(nombre, valor, [opciones])`|Configura una *cookie* en el cliente|
+|`res.clearCookie(nombre, [opciones])`|Borra una *cookie* del cliente|
+|`res.redirect([estado], url)`|Redirecciona al cliente a la URL dada, con un estado HTTP opcional|
+|`res.location`|El valor del encabezado `location` (ubicación) en el encabezado HTTP de respuesta|
+|`res.charset`|El valor del encabezado `charter` del encabezado HTTP de respuesta|
+|`res.send([body|status], [body])`|Envía objeto tipo _respuesta HTTP_ por la respuesta HTTP, junto con alguna otra respuesta HTTP opcional|
+|`res.json([body|status], [body])`|Envía un objeto JSON por la respuesta HTTP, junto con alguna respuesta HTTP opcional|
+|`res.jsonp([body|status], [body])`|Envía un objeto JSON _con soporte JSONP_ por la respuesta HTTP, junto con alguna respuesta HTTP opcional|
+|`set.type(tipo)`|Asigna el tipo de medio al encabezado de la respuesta HTTP.|
+|`res.format(objeto)`|Envía una respuesta condicionada, basada en el encabezado Accept de la petición HTTP|
+|`res.attachment([archivo])`|Asigna el encabezado de petición HTTP en `archivo`|
+|`res.sendfile(ruta, [opciones], [callback])`|Envía un archivo al cliente|
+|`res.download(ruta, [opciones], [callback])`|Ofrece al cliente la descarga de un archivo|
+|`res.links(enlaces)`|Configura el encabezado HTTP `links`|
+|`res.locals`|El objeto almacena variables específicas para renderizar la vista de la petición|
+|`res.render(vista, [locales], callback)`|Renderiza una vista|
+
+
 ## Qué son los middlewares o intermediarios
 Los *middlewares* o __intermediarios__ son funciones de JavaScript creadas para manejar las solicitudes HTTP de una aplicación Express. Pueden manipular los objetos de solicitud y de respuesta o realizar acciones aisladas o terminar el flujo de la solicitud al enviar la respuesta al cliente o al pasar el control al siguiente intermediario.
 
