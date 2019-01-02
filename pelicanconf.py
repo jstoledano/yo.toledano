@@ -31,8 +31,8 @@ SITE_DESCRIPTION = TAGLINE
 SITE_LOGO = SITELOGO
 DEFAULT_HEADER_IMAGE = COVER_IMG
 ARCHIVE_HEADER_IMAGE = ARTICLE_COVER
-VECINO_ANTERIOR = 'https://media.toledano.org/images/01-anterior.jpg'
-VECINO_SIGUIENTE = 'https://media.toledano.org/images/01-nuevo.jpg'
+VECINO_ANTERIOR = 'https://media.toledano.org/casper/img/anterior.jpg'
+VECINO_SIGUIENTE = 'https://s3.amazonaws.com/media.toledano.org/casper/img/siguiente.jpg'
 # ./CASPER
 
 
