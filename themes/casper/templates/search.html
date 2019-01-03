@@ -1,13 +1,5 @@
 {% extends "base.html" %}
 
-{% block header_image %}
-  {% if ARCHIVE_HEADER_IMAGE %}
-    {{- ARCHIVE_HEADER_IMAGE -}}
-  {% else %}
-    {{- COVER_IMG -}}
-  {% endif %}
-{% endblock %}
-
 {% block header_type %}post-head{% endblock %}
 {% block scroll %}{% endblock %}
 
@@ -19,7 +11,11 @@
 {% endblock header_title %}
 
 {% block html_head %}
-
+  <style>
+  .gsc-result .gs-title {
+    height: 1.6em !important;
+  }
+  </style>
 {% endblock html_head %}
 
 {% block content %}
@@ -28,7 +24,7 @@
     {% include 'partials/_search.html' %}
     <script>
       (function() {
-        var cx = '007387241458910042101:yttmqvxmhxg';
+        var cx = '007387241458910042101:aiifvpjeiyi';
         var gcse = document.createElement('script');
         gcse.type = 'text/javascript';
         gcse.async = true;
