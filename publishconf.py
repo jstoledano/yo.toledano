@@ -3,8 +3,8 @@
 from __future__ import unicode_literals
 import os
 import sys
-from pelicanconf import *
 sys.path.append(os.curdir)
+from pelicanconf import *
 
 
 SITEURL = 'https://yo.toledano.org'
