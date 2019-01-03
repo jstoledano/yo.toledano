@@ -11,11 +11,44 @@
 {% endblock header_title %}
 
 {% block html_head %}
-  <style>
-  .gsc-result .gs-title {
-    height: 1.6em !important;
+<style type='text/css'>
+  .gs-webResult {
+      border: 1px solid #eee;
+      padding: 1em;
   }
-  </style>
+
+  .gs-title {
+    height: 1.7em !important;
+    line-height: 1em !important;
+  }
+
+  .gsc-url-top {
+    display: block;
+    line-height: 1em !important;
+    margin-top: 0;
+    background-color: #FFF;
+  }
+
+  .gsc-table-result {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .gsc-table-cell-snippet-close, .gsc-table-cell-snippet-open{
+    padding: 5px 15px;
+    background-color: #FFF !important;
+  }
+  .gsc-resultsHeader {
+    display: none;
+  }
+  .gsc-result-info {
+    display: inline-block;
+  }
+  
+  .gcsc-branding-img-noclear {
+    line-height: normal !important;
+  }
+</style>
 {% endblock html_head %}
 
 {% block content %}
@@ -28,8 +61,7 @@
         var gcse = document.createElement('script');
         gcse.type = 'text/javascript';
         gcse.async = true;
-        gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-            '//cse.google.com/cse.js?cx=' + cx;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
         var s = document.getElementsByTagName('script')[0];
         s.parentNode.insertBefore(gcse, s);
       })();
