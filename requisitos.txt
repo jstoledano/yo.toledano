@@ -3,9 +3,7 @@ blinker
 cffi
 cryptography
 docutils
-Fabric
 feedgenerator
-ghp-import
 idna
 Jinja2
 Markdown
