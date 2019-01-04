@@ -64,7 +64,8 @@ OPEN_GRAPH_FB_APP_ID = "112184015464389"
 
 TIMEZONE = 'Mexico/General'
 DEFAULT_LANG = 'es'
-LOCALE = 'es_ES.UTF-8'
+LOCALE = ['es_MX.UTF-8', ]
+
 DEFAULT_DATE_FORMAT = '%A, %d de %B de %Y'
 
 PLUGIN_PATHS = ['../pelican-plugins', ]
