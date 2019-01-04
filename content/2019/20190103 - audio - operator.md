@@ -2,7 +2,7 @@ Title: Operator con Diana Krall
 Date: 2019-01-03 11:47:57
 Category: audioteca
 Tags: jazz, pop, lang:en 
-Cover: https:///media.toledano.org/images/dk04.jpg
+Cover: https://media.toledano.org/images/dk04.jpg
 Favorito: 1
 Summary: El regreso triunfal de la Audioteca Toledana con la encantadora Diana Krall.
 
