@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
+    {% block adsense %}{% endblock adsense %}
     <meta charset="utf-8">
     <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
     <meta name="description" content="{% block meta_description %}{% endblock %}">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta http-equiv="content-type" content="text/html;charset=utf-8">
 
+    {% include "partials/_analytics.html" %}
     {% include "partials/_http-equiv.html" %}
     {% include "partials/_css.html" %}
     {% include "partials/_prefetch.html" %}
     {% include "partials/_seo.html" %}
     {% include "partials/_opengraph.html" %}
     {% include "partials/_feed_rss.html" %}
-    {% include "partials/_analytics.html" %}
 
     {% block metagoogle   %}{% endblock metagoogle   %}
     {% block metafacebook %}{% endblock metafacebook %}
