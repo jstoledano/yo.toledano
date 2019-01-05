@@ -1,9 +1,6 @@
 {% extends "base.html" %}
 
 {% block header_image %}{% if article.cover %}{{ article.cover }}{% else %}{{ DEFAULT_HEADER_IMAGE }}{% endif %}{% endblock %}
-<<<<<<< HEAD
-{% block scroll %}{% endblock %}
-=======
 {% block scroll %}
   {% if article.cover %}
     <a class="scroll-down" href="#content">
@@ -13,7 +10,6 @@
   {% else %}
   {% endif %}
 {% endblock scroll %}
->>>>>>> release/v1.2.0
 {% block template_type %}post-template{% endblock %}
 
 {% block title %}{{ article.title|striptags }} - {{ super() }}{% endblock title %}
