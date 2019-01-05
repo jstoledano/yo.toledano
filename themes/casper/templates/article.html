@@ -1,7 +1,19 @@
 {% extends "base.html" %}
 
 {% block header_image %}{% if article.cover %}{{ article.cover }}{% else %}{{ DEFAULT_HEADER_IMAGE }}{% endif %}{% endblock %}
+<<<<<<< HEAD
 {% block scroll %}{% endblock %}
+=======
+{% block scroll %}
+  {% if article.cover %}
+    <a class="scroll-down" href="#content">
+      <span class="hidden">Scroll Down</span>
+      <i class="fa fa-chevron-left"></i>
+    </a>
+  {% else %}
+  {% endif %}
+{% endblock scroll %}
+>>>>>>> release/v1.2.0
 {% block template_type %}post-template{% endblock %}
 
 {% block title %}{{ article.title|striptags }} - {{ super() }}{% endblock title %}
@@ -138,6 +150,7 @@
       </section>
     </header>
     <section class="post-content">
+      {% include 'partials/_facebook_like.html' %}
 
       {% if article.series %}
         <div class="series">
@@ -156,6 +169,7 @@
       {% endif %}
 
       {{ article.content }}
+      {% include 'partials/_facebook_like.html' %}
     </section>
     <footer class="post-footer">
       <figure class="author-image">
@@ -194,6 +208,7 @@
           </span>
         </a>
       </section>
+      {% include 'partials/_facebook_page.html' %}
       {% include 'partials/_search.html' %}
       {% if DISQUS_SITENAME %}
         {% include 'partials/_coments.html' %}
