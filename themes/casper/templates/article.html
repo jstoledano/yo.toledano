@@ -1,7 +1,15 @@
 {% extends "base.html" %}
 
 {% block header_image %}{% if article.cover %}{{ article.cover }}{% else %}{{ DEFAULT_HEADER_IMAGE }}{% endif %}{% endblock %}
-{% block scroll %}{% endblock %}
+{% block scroll %}
+  {% if article.cover %}
+    <a class="scroll-down" href="#content">
+      <span class="hidden">Scroll Down</span>
+      <i class="fa fa-chevron-left"></i>
+    </a>
+  {% else %}
+  {% endif %}
+{% endblock scroll %}
 {% block template_type %}post-template{% endblock %}
 
 {% block title %}{{ article.title|striptags }} - {{ super() }}{% endblock title %}
