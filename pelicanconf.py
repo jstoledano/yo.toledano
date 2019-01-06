@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = u'Javier Sanchez Toledano'
 SITENAME = u'Yo, Toledano'
-VERSION = '1.4.2'
+VERSION = '1.4.3'
 SITEURL = ''
 STATICURL = 'https://media.toledano.org'
 SITELOGO = 'https://media.toledano.org/images/toledano-4.png'
