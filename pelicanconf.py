@@ -4,6 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = u'Javier Sanchez Toledano'
 SITENAME = u'Yo, Toledano'
+VERSION = '1.4.2'
 SITEURL = ''
 STATICURL = 'https://media.toledano.org'
 SITELOGO = 'https://media.toledano.org/images/toledano-4.png'
@@ -88,12 +89,12 @@ TAG_CLOUD_STEPS = 5
 THEME = 'themes/casper'
 
 CATS = {
-  'audioteca': ['Audioteca Toledana', 'La mejor selección de la música mundial', 'music'],
-  'fototeca': ['Fototeca Toledana', 'Conoce el mundo, visto desde un enfoque único', 'camera-retro'],
-  'desarrollo': ['Desarrollo Web', 'Notas sobre desarrollo con Python, Django, JavaScript y mucho más', 'code'],
-  'calidad': ['Calidad', 'Artículos sobre la implementación de la Norma ISO 9001', 'certificate'],
-  'opinion': ['Opinión', 'Artículos de opinión personal', 'coffee'],
-  'trinos': ['Céfiros y Trinos', 'Notas rápidas que encuentro navegando en Internet', 'retweet']
+    'audioteca': ['Audioteca Toledana', 'La mejor selección de la música mundial', 'music'],
+    'fototeca': ['Fototeca Toledana', 'Conoce el mundo, visto desde un enfoque único', 'camera-retro'],
+    'desarrollo': ['Desarrollo Web', 'Notas sobre desarrollo con Python, Django, JavaScript y mucho más', 'code'],
+    'calidad': ['Calidad', 'Artículos sobre la implementación de la Norma ISO 9001', 'certificate'],
+    'opinion': ['Opinión', 'Artículos de opinión personal', 'coffee'],
+    'trinos': ['Céfiros y Trinos', 'Notas rápidas que encuentro navegando en Internet', 'retweet']
 }
 
 TYPOGRIFY = True
