@@ -86,6 +86,7 @@ PYGMENTS_RST_OPTIONS = {'cssclass': 'codehilite', }
 TAG_CLOUD_STEPS = 5
 
 THEME = 'themes/casper'
+# THEME = '../academia/toledano'
 
 CATS = {
     'audioteca': ['Audioteca Toledana', 'La mejor selección de la música mundial', 'music'],
@@ -95,6 +96,8 @@ CATS = {
     'opinion': ['Opinión', 'Artículos de opinión personal', 'coffee'],
     'trinos': ['Céfiros y Trinos', 'Notas rápidas que encuentro navegando en Internet', 'retweet']
 }
+
+CATEGORIAS = CATS
 
 TYPOGRIFY = True
 
