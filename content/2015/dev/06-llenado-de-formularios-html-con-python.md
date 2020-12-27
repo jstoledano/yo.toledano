@@ -19,31 +19,33 @@ El problema es de blogsmexico y está en sus manos la solución (poniendo _captc
 
 Y bueno, también quiero probar mi generador de código coloreado basado en Geshi:
 
-    :::python
-    #!/usr/bin/env python
-    #-*- coding: utf-8 -*-
-    import urllib
+```python
+#!/usr/bin/env python
+#-*- coding: utf-8 -*-
+import urllib
 
-    bmexico = 'http://blogsmexico.com'
-    titulo = 'Yo, Toledano'
-    url="http://yo.toledano.org/"
-    ping ="http://www.blogsmexico.com/hacerping.php?"
+bmexico = 'http://blogsmexico.com'
+titulo = 'Yo, Toledano'
+url="http://yo.toledano.org/"
+ping ="http://www.blogsmexico.com/hacerping.php?"
 
-    data = urllib.urlencode({"titulo" : titulo, "url" : url})
-    f = urllib.urlopen(bmexico).read().find('toledano')
-    if f > 0:
-        print 'Estás en la portada'
-    else:
-    f = urllib.urlopen(ping+data)
+data = urllib.urlencode({"titulo" : titulo, "url" : url})
+f = urllib.urlopen(bmexico).read().find('toledano')
+if f > 0:
+    print 'Estás en la portada'
+else:
+f = urllib.urlopen(ping+data)
+```
 
 El plugin se llama **Transcode**, está escrito en Perl y usa PHP para comunicarse con Geshi, fue escrito por Ben Artin de Periodic Kigdom.
 
 Para usarlo lo único que tenemos que hacer es colocar el filtro `transcode="1"` a la marca `MTEntryBody` en cada uno de las plantillas en las que aparezca este código. Y al colocar el código usando las marcas `<pre>` y `<code>` agregar a continuación `transcode-language:` y el nombre del lenguaje, algo asi:
 
-    :::html
-    <pre><code>transcode-language: python
-    print 'Hola Mundo'
+```html
+<pre><code>transcode-language: python
+print 'Hola Mundo'
 
-    </pre></code>
+</pre></code>
+```
 
 <div data-alert class="alert-box">Esta entrada apareció orignalmente en el blog «Yo, Toledano» el 4 de septiembre de 2006. Su contenido podría estar desactualizado.</div>

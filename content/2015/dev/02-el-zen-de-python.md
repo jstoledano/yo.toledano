@@ -18,10 +18,10 @@ Summary: La filosofía de Python con un poco de humor
 * A menos que se silencien explícitamente
 * Frente a la ambigüedad, resiste la tentación de adivinar
 * Debe haber una, y de preferencia solo una, manera obvia de hacer las cosas
-* Aunque no sea tan obvia al principio, a menos que seas "El Holandes" (o sea Guido van Rossum)
+* Aunque no sea tan obvia al principio, a menos que seas "El Holandés" (o sea Guido van Rossum)
 * Ahora es mejor que nunca
 * Pero nunca es mejor que ahora mismo
 * Si la implementación resulta difícil de explicar, entonces es una mala idea
 * Si la implementación es fácil de explicar, entonces es una buena idea
-* Los Espacios de Nombres (namespaces) son una buena idea, tengamos mas de esos
+* Los Espacios de Nombres (_namespaces_) son una buena idea, tengamos mas de esos
 

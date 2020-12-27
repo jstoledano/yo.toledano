@@ -10,8 +10,8 @@ Summary:
 
 <p>Bueno, el caso es que este es el procedimiento para buscar un texto y reemplazarlo por otro:</p>
 
-    :%s/antes/despues/g
+    :%s/antes/después/g
 
-<p>Reemplaza <code>antes</code> por <code>despues</code>, la <code>g</code> es necesaria para sustituya en todo el documento.</p>
+<p>Reemplaza <code>antes</code> por <code>después</code>, la <code>g</code> es necesaria para sustituya en todo el documento.</p>
 
-    :%s/antes/despues/gc
+    :%s/antes/después/gc

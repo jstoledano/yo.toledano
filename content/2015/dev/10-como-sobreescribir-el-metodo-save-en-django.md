@@ -35,10 +35,11 @@ class Distribucion (models.Model):
 
 Como pueden ver, existe un campo llamado `diferencia` que será nuestro campo calculado, para eso creamos el método `save` dentro de nuestro modelo y ponemos el valor calculado en segundos.
 
-    :::python
+```python
     def save(self):
         difFecha = self.disponibleMAC - self.recibidoVRD
         self.diferencia = difFecha.seconds
         super (Distribucion, self).save()
+```
 
 Con esto, cada vez que actualicemos o agreguemos un registro, se calcularán los segundos de diferencia entre las dos fechas, en nuestra vista, podemos convertir estos segundos en el formato de nuestra preferencia.
